@@ -1,0 +1,24 @@
+Petalinux environment setup:
+	source /home/arthur/tools/Petalinux/2018.2/settings.sh
+
+Petalinux build project:
+	petalinux-build
+
+Petalinux package:
+	cd images/linux
+	petalinux-package --boot --fsbl zynqmp_fsbl.elf --u-boot u-boot.elf --pmufw pmufw.elf --fpga system.bit --force
+
+Petalinux prepare for QEMU simulation:
+	petalinux-package --prebuilt --fpga <FPGA bitstream>
+
+Build and package sysroot:
+	petalinux-build --sdk
+	petalinux-package --sysroot -d <directory>
+
+Petalinux QEMU boot options:
+	petalinux-boot --qemu --prebuilt 2
+	petalinux-boot --qemu --prebuilt 3
+	petalinux-boot --qemu --u-boot
+	petalinux-boot --qemu --kernel
+
+

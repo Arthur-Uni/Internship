@@ -1,0 +1,28 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+&amba{
+                dpu@8f000000 {
+                        compatible = "deephi, dpu";
+                        interrupt-parent = <&gic>;
+                        interrupts = <0x0 0x59 0x4 >;
+                        reg = <0x0 0x8f000000 0x0 0x700>;
+                        memory = <0x60000000 0x80000000>;
+                        core-num = <0x1>;
+                };
+ };
+
+&sdhci1 {
+    disable-wp;
+    no-1-8-v;
+ 
+};
+
+&dwc3_0 {
+    status = "okay";
+    dr_mode = "host";
+    snps,usb3_lpm_capable;
+    phy-names = "usb3-phy";
+    maximum-speed = "super-speed";
+};
