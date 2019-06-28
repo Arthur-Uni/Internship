@@ -21,5 +21,3 @@ Petalinux QEMU boot options:
 	petalinux-boot --qemu --prebuilt 3
 	petalinux-boot --qemu --u-boot
 	petalinux-boot --qemu --kernel
-
-
