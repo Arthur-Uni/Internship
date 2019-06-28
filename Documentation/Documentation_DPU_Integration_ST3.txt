@@ -1,0 +1,129 @@
+== Summary ==
+This page loosely follows the Xilinx tutorial found [https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration here] . It is adopted to Enclustra hardware and reference design files can be found in O:\Docs\Seminars\AI internship\DPU-Integration (the reference project archive is using a XU3 EG3 module).
+
+== Prerequisites ==
+=== Hardware ===
+*Mars ST3 base board (configuration: SD card boot)
+*Mars XU3 module
+*SD card
+**FAT32 bootable partition 'BOOT'
+**ext4 partition 'ROOTFS'
+*DisplayPort connection to monitor (ususally adapters like DP -> HDMI etc. are not supported...)
+*USB serial connection
+*USB hub
+*USB mouse
+*USB keyboard
+*USB camera (used during testing: See3CAM_CU30)
+=== Software ===
+*Vivado 2018.2
+*Xilinx SDK 2018.2
+*Petalinux 2018.2 (-> Ubuntu 16.04 recommended; running in VM slows down the whole process tremendously)
+
+== Create hardware design with Vivado ==
+The reference design can be found in O:\Docs\Seminars\AI_internship\DPU-Integration\ST3_reference_files.
+*open Vivado and change into reference design directory
+*use Vivado tcl console and run: 'source scripts/create_project.tcl' to create a new project and create the block design with the DPU inside
+*for reference you can refer to the DPU IP documentation [https://www.xilinx.com/support/documentation/ip_documentation/dpu/v1_2/pg338-dpu.pdf#nameddest=xDPUTRDOverview Link]
+*generate bit stream
+*export .hdf file
+
+== Petalinux installation ==
+*change to Linux machine at this point (if not already on Linux)
+*when installing Petalinux: the official documentation is missing one essential package in the requirements section: on Ubuntu -> sudo apt-get gawk
+*otherwise follow the official guide
+
+== Prepare directories ==
+*file locations: O:\Docs\Seminars\AI_internship\DPU-Integration
+*create 'Petalinux_Projects' directory
+*copy bash script 'create_project.sh' into 'Petalinux_Projects'
+**adjust the paths so that they correspond to your setup
+**in line 4: path to your petalinux 'settings.sh' script
+**in line 17: 'DPU_GIT_PATH' to point to .../Petalinux_Projects/DPU-Integration/reference-files/files
+*create 'DPU-Integration' directory inside 'Petalinux_Projects'
+*copy folder 'images' and 'reference-files' into 'DPU-Integration'
+
+== Create Petalinux project ==
+*open terminal in 'Petalinux_Projects' directory
+*create a new petalinux project using the script 'create_project.sh' prepared in the previous step
+*petalinux-config --get-hw-description=/path/to/hdf/file/
+**DTG settings -> MACHINE_NAME: no need for any adjustments, just leave it as default
+**Subsystem AUTO hardware settings -> Serial settings -> adjust primary uart slot according to the exported Vivado hardware design (default: psu_uart_0)
+**Image Packaging Configuration -> Root FS type: primary SD
+**Modify dev/mmcblk0p2 according to the exported Vivado hardware design (default: mmcblk0p2): for Mars ST3 mmcblk1p2
+**Save and Exit
+*Configure rootfs: 'petalinux-config -c rootfs'
+**Petalinux package group:
+***opencv
+***x11
+***v4lutils
+***matchbox
+**Apps:
+***dnndk
+***autostart
+**Filesystem packages:
+***console->tools->protobuf
+***libs->libmali-xlnx->libmali-xlnx
+**Modules:
+***dpu
+**Save and Exit
+*Modify <proj_dir>/project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi:
+**add dpu to the device tree according to the Xilinx tutorial page
+***interrupt sensitivity is typically: LEVEL_HIGH
+***choose the correct GIC IRQ number according to your Vivado hardware design
+**add the following ST3 specific modifications to the device tree as well
+        &sdhci1 { <br />
+                disable-wp; <br />
+                no-1-8-v; <br />
+        }; <br />
+        <br />
+        &dwc3_0{ <br />
+                status = "okay"; <br />
+                dr_mode = "host"; <br />
+                snps,usb3_lpm_capable; <br />
+                phy-names = "usb3-phy"; <br />
+                maximum-speed = "super-speed"; <br />
+        };
+        
+*build the Petalinux project: 'petalinux-build'
+*package all the necessary files to create a bootable SD card: 
+**cd images/linux
+**petalinux-package --boot --fsbl zynqmp_fsbl.elf --u-boot u-boot.elf --pmufw pmufw.elf --fpga system.bit --force
+*build SDK: 'petalinux-build --sdk'
+*extract generated SDK and sysroot into specified directory: 'petalinux-package --sysroot -d <directory>
+
+== Create application using XSDK ==
+*follow the steps of the Xilinx tutorial: 'Build Machine Learning Applications Using Xilinx SDK'
+*(optional) under g++ compiler->Directories: add <path/to/sdk/sysroot/aarch64-xilinx-linux>usr/include to remove warnings
+=== Modification to resnet50 sample application ===
+Instead of going through the whole data set quickly, a slight modification can be made to manually switch between quickly going through the images and stopping at one image. The keyboard key used to switch between those two modes is 'SPACE'. The modified main.cc file for the resnet50 application can be found in O:\Docs\Seminars\AI_internship\DPU-Integration\ST3_reference_files\src\resnet50
+
+== Copy all the necessary files to SD card ==
+*Copy BOOT.bin and image.ub to the BOOT directory of the SD card
+*Copy the SDK root filesystem created in the tutorial to ROOTFS of the SD card
+*Copy XSDK applications and all necessary files to ROOTFS
+
+== Demonstration bring up ==
+At this point, it is assumed that the previous steps have been completed successfully and two demo applications have been built using the Xilinx SDK, namely resnet50 and face detection. The board is connected to a monitor via DisplayPort. All other peripherals and an USB connection are also established. The following steps are necessary for the demonstration to work properly.
+
+=== Description ===
+*Sample application: resnet50 -> image classification
+*Sample application: real time face detection using the USB 3.0 camera
+
+=== Bringup ===
+*establish a serial connection using TeraTerm for example:
+**Speed: 115200
+**Data: 8 bit
+**Parity: none
+**Stop bits: 1
+**Flow control: none
+*after booting:
+**user credentials: username: root; pw: root
+**initialize the display:
+***export DISPLAY=:0.0
+***change output mode in order to reduce the load on the FPGA to render in higher resolutions: 'xrandr --output DP-1 --mode 640x480'
+***xset -dpms
+**load dpu module manually: 'insmod /lib/modules/4.14.0+/extra/dpu.ko'
+***(this should be done automatically by the 'autostart' app enabled in the Petalinux configuration part, but does not work for now)
+**the example applications should work now:
+***change into the corresponding directory, e.g. resnet50
+***to run application: './resnet50'

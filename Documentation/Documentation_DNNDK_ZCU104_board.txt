@@ -1,0 +1,39 @@
+== Summary ==
+Setup guide for running neural network inference examples using the ZCU104 evaluation board and Xilinx DNNDK framework version 2.08 (current version is 3.0)
+
+== Prerequisites ==
+Board setup has been completed according to the reference guides online (or at O:\Docs\Seminars\AI internship\ZCU104 testing\ZCU_Setup) and all COM ports have been assigned correctly. Furthermore, the board has following connections:
+*monitor connection via DisplayPort
+*ethernet (for ssh access)
+*USB for serial communication
+*USB 3.0 camera connected to board
+*optional: USB mouse and keyboard (use USB Hub)
+
+== Testing the DNNDK samples on the board ==
+
+=== DNNDK setup ===
+*DNNDK version 2.08 can be found in O:\Docs\Seminars\AI internship\ZCU104 testing
+*download SD card image 2018-12-04-zcu104-desktop-stretch.img.zip version 2.08 from [https://www.xilinx.com/products/design-tools/ai-inference/ai-developer-hub.html#edge here]
+*write image to SD card
+*boot ZCU104 board with SD card inserted and in SD card boot mode
+*get IP address of board: 'hostname -I'
+*copy the contents of extracted archive xilinx_dnndk_v2.08.7z to the board home directory (or anywhere you want) via SCP (or other method)
+*change into directory ZCU104 and run ./install.sh
+*some more adjustments necessary:
+**copy the contents of the folder: O:\Docs\Seminars\AI internship\ZCU104 testing\ZCU104_mandatory_patch_for_DNNDK to the board
+**execute the shell script on the board: './irps5401.sh'
+**execute command: 'export DISPLAY=:0.0'
+**(it is also possible to have a remote display through ssh -X root@BOARD_IP and executing 'export DISPLAY=BOARD_IP:0.0; however, this is not recommended as the lag introduced via ssh is quite severe for real time video applications)
+
+=== Running the samples ===
+*navigate to the ZCU104 samples folder
+*inside there are all the sample files that can be run
+*to run an example, first change into its directory and run make
+*execution of samples via the following commands from inside the respective samples folder
+**'./resnet50'
+**'./face_detection'
+**'./pose_detection /video/pose.mp4'
+**'./video_analysis /video/structure.mp4'
+**'./inception_v1'
+
+
