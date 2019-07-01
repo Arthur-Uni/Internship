@@ -1,0 +1,174 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	IDS main document for bachelor and master thesis		 %
+%	created by Jan Richter-Brockmann 						 %
+%	Sommersemester 2017										 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+	a4paper,
+	12pt,
+	twoside=true,
+	BCOR10mm,					% Bindekorrektur
+	toc=bibliography,			% Fuegt das Literaturverzeichnis ins Inhaltsverzeichnis ein
+	cleardoublepage=empty
+]{scrbook}
+
+\usepackage[utf8]{inputenc}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	Conditionals											 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{ifthen}
+\newboolean{Confidential}
+\newboolean{EnglishVersion}
+\newboolean{Logo}
+\newboolean{PrintedVersion}
+
+% Edit this file to set your personal information
+\input{settings.tex}
+
+\ifthenelse{\boolean{EnglishVersion}}{
+	\usepackage[english]{babel}
+}{
+	\usepackage[ngerman]{babel}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	Page layout												 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[headsepline]{scrpage2}
+\pagestyle{scrheadings}
+\setheadsepline{0.5pt}
+
+\usepackage[onehalfspacing]{setspace}
+\usepackage{microtype}	% Nicer spacings, prevents to cross the page's margin
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	Images, formulas and tables								 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{subfigure}	
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{tikz}	% this package become very handy when plotting graphs 
+\usepackage{tikz-timing}
+\usepackage{circuitikz}
+\usetikzlibrary{external}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shapes.geometric}
+\tikzexternalize[prefix=tikzplot/]
+\usepackage{xintexpr}
+
+\usepackage[tbtags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{trfsigns}	% Laplace symbol 
+\usepackage{gensymb}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+% Colors - use plot1 - plot7 for your plots
+% IDSblua can be used for figures
+\definecolor{IDSblue}{rgb}{0,0.3294118,0.623529}%
+\definecolor{plot1}{rgb}{0,0.3294118,0.623529}%
+\definecolor{plot2}{rgb}{1,0,0}%
+\definecolor{plot3}{rgb}{0.647058824,0.647058824,0.647058824}%
+\definecolor{plot4}{rgb}{0.498,0.788,0.498}%
+\definecolor{plot5}{rgb}{0.745,0.682,0.831}%
+\definecolor{plot6}{rgb}{0.941,0.007,0.498}%
+\definecolor{plot7}{rgb}{0.749,0.357,0.09}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	Unities													 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[load-configurations=binary, load-configurations=abbreviations]{siunitx}
+\ifthenelse{\boolean{EnglishVersion}}{
+	\sisetup{group-separator = {,}}
+}{
+	\sisetup{group-separator = {.}}
+}
+\sisetup{group-minimum-digits = 3}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	References												 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[style=numeric-verb, backend=bibtex8]{biblatex}
+\addbibresource{Ref.bib}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	Misc													 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[hidelinks]{hyperref}	% Enables links in the PDF
+\usepackage[printonlyused]{acronym}
+\renewcommand*{\acffont}[1]{{\color{black}\itshape{#1}}}
+\usepackage{pdfpages}
+\usepackage{algorithm}				% see algorithm documentation to use this package
+\usepackage[]{algpseudocode}
+\usepackage{pdflscape}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	Main-Document											 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	\input{title_center.tex}
+	\cleardoubleemptypage
+	
+	% ------------------------------------------------------------------------------------
+	% Table Of Contents
+	\tableofcontents
+	\cleardoubleemptypage
+	\phantomsection			% is required to neglect this chapter in the TOC
+	
+	% ------------------------------------------------------------------------------------
+	% List of Figures
+	\addcontentsline{toc}{chapter}{List of Figures}
+	\listoffigures
+	\cleardoubleemptypage
+	
+	% ------------------------------------------------------------------------------------
+	% List of Tables
+	\addcontentsline{toc}{chapter}{List of Tables}
+	\listoftables
+	\cleardoubleemptypage
+	
+	% ------------------------------------------------------------------------------------
+	
+	\pagenumbering{arabic}	% change the numbering to arabic numbers
+	
+	% CONTENT - include all your content files in content.tex
+	\input{content.tex}
+\end{document}

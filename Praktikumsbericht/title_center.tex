@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%															 %
+%	Titel Page												 %
+%															 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+
+\pagestyle{empty}
+
+\ifthenelse{\boolean{EnglishVersion}}{
+	\pdfbookmark[0]{Front Page}{Front Page}
+}{
+	\pdfbookmark[0]{Titelseite}{Titelseite}
+}
+
+\enlargethispage{2.3in}
+\setlength{\voffset}{-1in}
+
+\hspace*{3cm}
+\begin{flushright}
+\includegraphics[height=25mm]{bilder/ids_logo/rwth_ids_en_rgb.png}
+\end{flushright}
+%\bigskip
+\setcounter{subfigure}{0}
+
+%~\\
+%\ifthenelse{\boolean{EnglishVersion}}{
+%	The present work was submitted to the Chair of Integrated Digital Systems and Circuit Design.
+%}{
+%	Diese Arbeit wurde vorgelegt am Lehrstuhl für Integrierte Digitale Systeme und Schaltungen der RWTH Aachen.
+%}
+ 
+\vspace{15mm}
+
+{ \centering \huge \MakeUppercase \IDSSubject \\} 
+
+\vspace{15mm}
+
+{\color{IDSblue}\hrule}\par
+\vspace{1mm}
+{\color{IDSblue}\hrule}\par
+
+\bigskip 
+
+~\\
+\ifthenelse{\boolean{EnglishVersion}}{
+	{\LARGE \bfseries \centering \IDSTitleEnglish \\}	
+}{
+	{\LARGE \bfseries \centering \IDSTitleGerman \\}		
+}
+~\\
+
+{\color{IDSblue}\hrule}\par
+\vspace{1mm}
+{\color{IDSblue}\hrule}\par
+
+
+%{\usefont{\encodingdefault}{cpc}{m}{n}\selectfont \Large \MakeUppercase \IDSSubject \\} \bigskip
+\vspace{5mm}
+~\\
+\begin{raggedleft}
+\ifthenelse{\boolean{EnglishVersion}}{
+	{\Large presented by\\}
+}{
+	{\Large von\\}
+}
+~ {\Large   \IDSAuthorFirstName~\IDSAuthorSecondName\\}
+{\Large Matr.-Nr. \IDSMatNr \\} 
+
+\par \vspace*{\fill}
+
+\bigskip \bigskip
+
+%~\\~\\~\\
+%\ifthenelse{\boolean{EnglishVersion}}{
+%	{\large  Supervised by \IDSSupervisor \\}
+%	~\\
+%	{\large reviewed by Prof.\ Dr.-Ing.\ Tobias Gemmeke \\}
+%}{
+%	{\Large Unter der Betreuung von \IDSSupervisor \\}
+%}
+
+
+\bigskip \bigskip
+
+%~\\
+%\ifthenelse{\boolean{EnglishVersion}}{
+	%{\Large $1^{st}$ Examiner: Prof. Dr.-Ing. Tobias Gemmeke}
+%	~\\
+	%{\Large $2^{nd}$ Examiner: ---}
+%}{
+%	{\Large 1. Prüfer: Prof. Dr.-Ing. Tobias Gemmeke}
+%	~\\
+%	{\Large 2. Prüfer: ---}
+%}
+\end{raggedleft}
+\bigskip
+~\\
+
+{\flushright{ \Large Aachen, \IDSSubmissionDate}\\~\\}
+
+
+\newpage
+\setlength{\voffset}{0in}
+
+
+\thispagestyle{empty}
+\rule{0pt}{0pt}
+\cleardoublepage
+
+\end{titlepage}
