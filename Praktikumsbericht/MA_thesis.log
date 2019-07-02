@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.25)  25 JUN 2019 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.25)  2 JUL 2019 12:11
 entering extended mode
 **./MA_thesis.tex
 (MA_thesis.tex
@@ -174,15 +174,9 @@ File: switch.def 2019/06/03 3.32 Babel switching mechanism
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\nger
-man.ldf"
-Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
-phy)
-
-("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\nger
-manb.ldf"
-Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
-aphy)
+("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\eng
+lish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
 
 ("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def
 "
@@ -194,8 +188,10 @@ File: babel.def 2019/06/03 3.32 Babel common definitions
 def")
 \bbl@dirlevel=\count91
 )
-Package babel Info: Making " an active character on input line 121.
-)))
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
 ("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrpa
 ge2.sty"
 Package: scrpage2 2019/02/01 v3.26b KOMA-Script package (page head and foot)
@@ -1804,26 +1800,13 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package biblatex Info: Trying to load language 'ngerman'...
-Package biblatex Info: ... file 'ngerman.lbx' found.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
 
-("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\nger
-man.lbx"
-File: ngerman.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
-Package biblatex Info: Trying to load language 'german'...
-Package biblatex Info: ... file 'german.lbx' found.
-
-("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\germ
-an.lbx"
-File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
+("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\engl
+ish.lbx"
+File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
-Package biblatex Info: Trying to load language 'german'...
-Package biblatex Info: ... file 'german.lbx' found.
-
-("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\germ
-an.lbx"
-File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
-))
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
@@ -2094,7 +2077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
@@ -2121,30 +2104,30 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 15
-9.
+Package tocbasic Info: character protrusion at lof deactivated on input line 16
+0.
  (MA_thesis.lof)
 \tf@lof=\write7
 \openout7 = `MA_thesis.lof'.
 
 
-[5
+[1
 
 
-] [6
+] [2
 
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 16
-5.
+6.
  (MA_thesis.lot)
 \tf@lot=\write8
 \openout8 = `MA_thesis.lot'.
 
- [7
+ [3
 
 
-] [8
+] [4
 
 
 ] (content.tex (Chapter1.tex
@@ -2173,7 +2156,7 @@ page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.3 \chapter
-            {Tagesabläufe} [1
+            {Workday reports} [1
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
@@ -2181,7 +2164,7 @@ l.3 \chapter
 <to be read again> 
                    \relax 
 l.3 \chapter
-            {Tagesabläufe} [2
+            {Workday reports} [2
 
 
 ]
@@ -2190,36 +2173,36 @@ chapter A.
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.174 \end{document}
+l.175 \end{document}
                      [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
  (MA_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
 Package rerunfilecheck Info: File `MA_thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'MA_thesis.run.xml'.
 \openout1 = `MA_thesis.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
  ) 
 Here is how much of TeX's memory you used:
- 68024 strings out of 492895
- 1634249 string characters out of 3123268
- 2212939 words of memory out of 3000000
- 71062 multiletter control sequences out of 15000+200000
- 540977 words of font info for 61 fonts, out of 3000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 73i,10n,114p,9090b,2191s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 67964 strings out of 492895
+ 1633199 string characters out of 3123268
+ 2204913 words of memory out of 3000000
+ 71008 multiletter control sequences out of 15000+200000
+ 541373 words of font info for 64 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 73i,10n,114p,9090b,1817s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmr12.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/aruder/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on MA_thesis.pdf (11 pages, 74312 bytes).
+Output written on MA_thesis.pdf (11 pages, 76752 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
- 12858 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 14906 words of extra memory for PDF output out of 17280 (max. 10000000)
 
