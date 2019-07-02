@@ -2,5 +2,6 @@
 \babel@toc {english}{}
 \contentsline {chapter}{List of Figures}{I}{section*.2}% 
 \contentsline {chapter}{List of Tables}{III}{chapter*.3}% 
+\contentsline {chapter}{Abbreviations}{V}{chapter*.5}% 
 \contentsline {chapter}{\numberline {1}Week 1}{1}{chapter.1}% 
 \contentsline {chapter}{\numberline {A}Workday reports}{3}{appendix.A}% 

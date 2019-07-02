@@ -167,6 +167,16 @@
 	\cleardoubleemptypage
 	
 	% ------------------------------------------------------------------------------------
+% Abbreviations
+% Insert your abbreviation in Abbreviations.tex - to get a sorted list, use the command below and you will get Abbreviations-sort.tex which is actually included
+	\chapter*{Abbreviations}
+	\addcontentsline{toc}{chapter}{Abbreviations}
+	\begin{acronym}[ABCDEFGH]
+		\setlength{\parskip}{0ex}			% Reduce the line spacing in the abbreviations
+		\setlength{\itemsep}{1ex}
+		\input{Abbreviations-sort.tex}		% To sort the abbreviations, us the follwing command: sort Abbreviations.tex /O Abbreviations-sort.tex
+	\end{acronym}
+	\cleardoubleemptypage
 	
 	\pagenumbering{arabic}	% change the numbering to arabic numbers
 	
