@@ -1,45 +1,10 @@
-% This file was created with JabRef 2.10.
-% Encoding: Cp1252
+% Encoding: UTF-8
 
-
-@Book{Baker10,
-  Title                    = {{CMOS - Circuit Design, Layout, and Simulation}},
-  Author                   = {Baker, R. Jacob},
-  Publisher                = {Wiley},
-  Year                     = {2010},
-
-  Address                  = {Piscataway},
-
-  ISBN                     = {978-0-470-88132-3}
+@Book{zynq-book,
+  author    = {Loise Crocket and David Northcote and Craig Ramsay and Fraser Robinson and Bob Stewart},
+  title     = {Exploring Zynq MPSoC: With PYNQ and Machine Learning Applications},
+  year      = {2019},
+  publisher = {Strathclyde Academic Media},
 }
 
-@Book{Nielsen,
-  Title                    = {Neural Networks and Deep Learning},
-  Author                   = {Michael Nielsen},
-  Publisher                = {Online},
-  Year                     = {2017},
-
-  Address                  = {http://neuralnetworksanddeeplearning.com/index.html},
-
-  Owner                    = {Jan},
-  Timestamp                = {2017.06.05}
-}
-
-@Book{NeuralNetworks05,
-	Title                    = {Neural Networks},
-	Author                   = {Simon Haykin},
-	Publisher                = {Pearson Education},
-	Year                     = {2005},
-	
-	Owner                    = {Jan},
-	Timestamp                = {2017.06.05}
-}
-
-@Book{Schmeink15,
-	Title                    = {Optimization in Engineering - Lecture Notes},
-	Author                   = {Schmeink, Anke},
-	Publisher                = {UMIC Research Centre},
-	Year                     = {2015},
-	
-	Address                  = {RWTH Aachen University}
-}
+@Comment{jabref-meta: databaseType:biblatex;}

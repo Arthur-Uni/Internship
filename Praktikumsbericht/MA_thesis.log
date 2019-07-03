@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.25)  2 JUL 2019 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.25)  3 JUL 2019 15:17
 entering extended mode
 **./MA_thesis.tex
 (MA_thesis.tex
@@ -61,18 +61,6 @@ Package typearea Info: You've used standard option `a4paper'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `paper=a4' there
 (typearea)             instead of `a4paper', too.
-
-
-Package typearea Warning: You've used obsolete option `BCOR10mm'.
-(typearea)                Usage of this option indicates an old document
-(typearea)                and changes compatibility level using
-(typearea)                `BCOR=10mm,version=first,
-(typearea)                enabledeprecatedfontcommands' that may result
-(typearea)                in further warnings.
-(typearea)                If you don't want this, you should simply
-(typearea)                replace option `BCOR10mm' by `BCOR=10mm'.
-
-Package typearea Info: Switching compatibility level to `first'.
 \ta@hblk=\skip43
 \ta@vblk=\skip44
 \ta@temp=\skip45
@@ -2156,82 +2144,164 @@ Class scrbook Warning: \float@addtolists detected!
 
 Package acronym Info: Label `acro:FPGA' newly defined as it shall be overridden
 
-although it is yet undefined on input line 8.
+although it is yet undefined on input line 2.
 Package acronym Info: Label `acro:IP' newly defined as it shall be overridden
-although it is yet undefined on input line 9.
+although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:SDR' newly defined as it shall be overridden
-although it is yet undefined on input line 9.
+although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:PCIe' newly defined as it shall be overridden
 
-although it is yet undefined on input line 9.
+although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:USB' newly defined as it shall be overridden
-although it is yet undefined on input line 9.
+although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:AXI' newly defined as it shall be overridden
-although it is yet undefined on input line 9.
+although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:DSP' newly defined as it shall be overridden
-although it is yet undefined on input line 9.
+although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:SoC' newly defined as it shall be overridden
-although it is yet undefined on input line 10.
-<bilder/overview.png, id=97, 698.1282pt x 421.0932pt>
+although it is yet undefined on input line 4.
+<bilder/overview.png, id=117, 1090.82532pt x 657.95813pt>
 File: bilder/overview.png Graphic file (type png)
 <use bilder/overview.png>
-Package pdftex.def Info: bilder/overview.png  used on input line 14.
-(pdftex.def)             Requested size: 320.09354pt x 193.0691pt.
+Package pdftex.def Info: bilder/overview.png  used on input line 8.
+(pdftex.def)             Requested size: 320.09354pt x 193.07191pt.
 Package acronym Info: Label `acro:GPU' newly defined as it shall be overridden
-although it is yet undefined on input line 18.
+although it is yet undefined on input line 12.
 Package acronym Info: Label `acro:ASIC' newly defined as it shall be overridden
 
-although it is yet undefined on input line 18.
+although it is yet undefined on input line 12.
 Package acronym Info: Label `acro:CPU' newly defined as it shall be overridden
-although it is yet undefined on input line 18.
+although it is yet undefined on input line 12.
 Package acronym Info: Label `acro:AI' newly defined as it shall be overridden
-although it is yet undefined on input line 18.
+although it is yet undefined on input line 12.
 Package acronym Info: Label `acro:DNNDK' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 18.
-
-Package acronym Warning: Acronym `DNNDK' is not defined on input line 18.
-
-
-Package acronym Warning: Acronym `DNNDK' is not defined on input line 18.
-
-)
+although it is yet undefined on input line 12.
+) (Chapter2.tex
 Underfull \vbox (badness 1478) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.4 
-     [1
+l.1 \chapter
+            {Week} [1
 
 
-]
-
-LaTeX Warning: Empty bibliography on input line 10.
-
-(Appendix.texpdfTeX warning (ext4): destination with the same identifier (name{
-page.2}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3 \chapter
-            {Workday reports} [2pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.1.1}) has been already used, duplicate ignored
+l.1 \chapter
+            {Week} [2pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.1.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.3 \chapter
-            {Workday reports} <./bilder/overview.png>]
-chapter A.
-))pdfTeX warning (ext4): destination with the same identifier (name{page.3}) ha
-s been already used, duplicate ignored
+l.1 \chapter
+            {Week} <./bilder/overview.png>]
+chapter 2.
+Package acronym Info: Label `acro:MPSoC' newly defined as it shall be overridde
+n
+although it is yet undefined on input line 2.
+<bilder/ZYNQ-overview.png, id=156, 692.5875pt x 221.32687pt>
+File: bilder/ZYNQ-overview.png Graphic file (type png)
+<use bilder/ZYNQ-overview.png>
+Package pdftex.def Info: bilder/ZYNQ-overview.png  used on input line 6.
+(pdftex.def)             Requested size: 426.7914pt x 136.39044pt.
+Package acronym Info: Label `acro:PS' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:PL' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:OS' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:APU' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:VPU' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+
+Package acronym Warning: Acronym `VPU' is not defined on input line 10.
+
+
+Package acronym Warning: Acronym `VPU' is not defined on input line 10.
+
+Package acronym Info: Label `acro:RPU' newly defined as it shall be overridden
+although it is yet undefined on input line 10.
+Package acronym Info: Label `acro:SDK' newly defined as it shall be overridden
+although it is yet undefined on input line 11.
+
+Package acronym Warning: Acronym `SDK' is not defined on input line 11.
+
+
+Package acronym Warning: Acronym `SDK' is not defined on input line 11.
+
+Package acronym Info: Label `acro:ANN' newly defined as it shall be overridden
+although it is yet undefined on input line 12.
+) (Chapter3.texpdfTeX warning (ext4): destination with the same identifier (nam
+e{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 \end{document}
-                     [3
+l.1 \chapter
+            {Week} [3
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1 \chapter
+            {Week} <./bilder/ZYNQ-overview.png>]pdfTeX warning (ext4): destinat
+ion with the same identifier (name{page.4}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Week} [4]
+chapter 3.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
+("C:\Users\aruder\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+Package acronym Info: Label `acro:ML' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
+
+
+Package acronym Warning: Acronym `ML' is not defined on input line 5.
+
+
+Package acronym Warning: Acronym `ML' is not defined on input line 5.
+
+
+Package acronym Warning: Acronym `ML' is not defined on input line 5.
+
+<bilder/ilsvrc.png, id=213, 722.7pt x 436.5108pt>
+File: bilder/ilsvrc.png Graphic file (type png)
+<use bilder/ilsvrc.png>
+Package pdftex.def Info: bilder/ilsvrc.png  used on input line 9.
+(pdftex.def)             Requested size: 426.7914pt x 257.78557pt.
+[5
+
+
+]) [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.13 
+      <./bilder/ilsvrc.png>]
+chapter without number
+(Appendix.tex [7
+
+
+] [8
 
 
 ]
+chapter A.
+)) [9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (MA_thesis.aux)
@@ -2245,13 +2315,13 @@ Package logreq Info: Writing requests to 'MA_thesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 68126 strings out of 492895
- 1634813 string characters out of 3123268
- 2208913 words of memory out of 3000000
- 71098 multiletter control sequences out of 15000+200000
- 543688 words of font info for 85 fonts, out of 3000000 for 9000
+ 68466 strings out of 492895
+ 1640389 string characters out of 3123268
+ 2209897 words of memory out of 3000000
+ 71370 multiletter control sequences out of 15000+200000
+ 544434 words of font info for 99 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,10n,114p,9090b,1817s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,10n,114p,9090b,2425s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmbxti10.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 
@@ -2261,10 +2331,11 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Use
 rs/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl
 12.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmssbx10.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on MA_thesis.pdf (13 pages, 233890 bytes).
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aruder/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on MA_thesis.pdf (19 pages, 365921 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 17991 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 18025 words of extra memory for PDF output out of 20736 (max. 10000000)
 

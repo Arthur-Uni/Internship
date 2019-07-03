@@ -16,5 +16,52 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{zynq-book}{book}{}
+    \name{author}{5}{}{%
+      {{hash=CL}{%
+         family={Crocket},
+         familyi={C\bibinitperiod},
+         given={Loise},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ND}{%
+         family={Northcote},
+         familyi={N\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Ramsay},
+         familyi={R\bibinitperiod},
+         given={Craig},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Robinson},
+         familyi={R\bibinitperiod},
+         given={Fraser},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={Bob},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Strathclyde Academic Media}%
+    }
+    \strng{namehash}{CL+1}
+    \strng{fullhash}{CLNDRCRFSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Exploring Zynq MPSoC: With PYNQ and Machine Learning
+  Applications}
+    \field{year}{2019}
+  \endentry
+\enddatalist
 \endinput
