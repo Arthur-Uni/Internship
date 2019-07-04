@@ -162,7 +162,7 @@ Document=Chapter3.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=3712
+Cursor=3711
 
 [SessionInfo]
 FrameCount=9
