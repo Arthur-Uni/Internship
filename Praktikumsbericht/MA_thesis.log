@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.25)  4 JUL 2019 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.25)  5 JUL 2019 17:02
 entering extended mode
 **./MA_thesis.tex
 (MA_thesis.tex
@@ -2094,12 +2094,15 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 16
 0.
- (MA_thesis.lof)
+ (MA_thesis.lof
+
+Package acronym Warning: Acronym `DPU' is not defined on input line 10.
+
+)
 \tf@lof=\write7
 \openout7 = `MA_thesis.lof'.
 
-
-[1
+ [1
 
 
 ] [2
@@ -2124,8 +2127,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 16
 ] [6
 
 
-] (content.tex
-(Chapter1.tex
+] (content.tex (Chapter1.tex
 chapter 1.
 
 Class scrbook Warning: \float@addtolists detected!
@@ -2160,7 +2162,7 @@ Package acronym Info: Label `acro:DSP' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:SoC' newly defined as it shall be overridden
 although it is yet undefined on input line 4.
-<bilder/overview.png, id=119, 1090.82532pt x 657.95813pt>
+<bilder/overview.png, id=121, 1090.82532pt x 657.95813pt>
 File: bilder/overview.png Graphic file (type png)
 <use bilder/overview.png>
 Package pdftex.def Info: bilder/overview.png  used on input line 8.
@@ -2204,7 +2206,7 @@ chapter 2.
 Package acronym Info: Label `acro:MPSoC' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 2.
-<bilder/ZYNQ-overview.png, id=158, 692.5875pt x 221.32687pt>
+<bilder/ZYNQ-overview.png, id=160, 692.5875pt x 221.32687pt>
 File: bilder/ZYNQ-overview.png Graphic file (type png)
 <use bilder/ZYNQ-overview.png>
 Package pdftex.def Info: bilder/ZYNQ-overview.png  used on input line 6.
@@ -2277,7 +2279,7 @@ Package acronym Warning: Acronym `ML' is not defined on input line 5.
 
 Package acronym Warning: Acronym `ML' is not defined on input line 5.
 
-<bilder/ilsvrc.png, id=215, 722.7pt x 436.5108pt>
+<bilder/ilsvrc.png, id=217, 722.7pt x 436.5108pt>
 File: bilder/ilsvrc.png Graphic file (type png)
 <use bilder/ilsvrc.png>
 Package pdftex.def Info: bilder/ilsvrc.png  used on input line 9.
@@ -2296,15 +2298,103 @@ chapter 4.
 
 Package acronym Warning: Acronym `ML' is not defined on input line 2.
 
+Package acronym Info: Label `acro:DPU' newly defined as it shall be overridden
+although it is yet undefined on input line 4.
+
+Package acronym Warning: Acronym `DPU' is not defined on input line 4.
+
+
+Package acronym Warning: Acronym `DPU' is not defined on input line 4.
+
+Package acronym Info: Label `acro:SDSoC' newly defined as it shall be overridde
+n
+although it is yet undefined on input line 5.
+
+Package acronym Warning: Acronym `SDSoC' is not defined on input line 5.
+
+
+Package acronym Warning: Acronym `SDSoC' is not defined on input line 5.
+
+
+Package acronym Warning: Acronym `SDSoC' is not defined on input line 5.
+
+Package acronym Info: Label `acro:HDL' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
+
+Package acronym Warning: Acronym `HDL' is not defined on input line 5.
+
+
+Package acronym Warning: Acronym `HDL' is not defined on input line 5.
+
+Package acronym Info: Label `acro:API' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
+
+Package acronym Warning: Acronym `API' is not defined on input line 5.
+
+
+Package acronym Warning: Acronym `API' is not defined on input line 5.
+
+
+Package acronym Warning: Acronym `ML' is not defined on input line 7.
+
+<bilder/DPU_example_design.png, id=243, 1001.24063pt x 554.07pt>
+File: bilder/DPU_example_design.png Graphic file (type png)
+<use bilder/DPU_example_design.png>
+Package pdftex.def Info: bilder/DPU_example_design.png  used on input line 10.
+(pdftex.def)             Requested size: 426.7914pt x 236.18257pt.
+
+Package acronym Warning: Acronym `DPU' is not defined on input line 11.
+
+
+Package acronym Warning: Acronym `DPU' is not defined on input line 11.
+
+
+Package acronym Warning: Acronym `DPU' is not defined on input line 14.
+
+Package acronym Info: Label `acro:MIPI' newly defined as it shall be overridden
+
+although it is yet undefined on input line 14.
+
+Package acronym Warning: Acronym `MIPI' is not defined on input line 14.
+
+
+Package acronym Warning: Acronym `MIPI' is not defined on input line 14.
+
+Package acronym Info: Label `acro:CSI2' newly defined as it shall be overridden
+
+although it is yet undefined on input line 14.
+
+Package acronym Warning: Acronym `CSI2' is not defined on input line 14.
+
+
+Package acronym Warning: Acronym `CSI2' is not defined on input line 14.
+
+Package acronym Info: Label `acro:DMA' newly defined as it shall be overridden
+although it is yet undefined on input line 14.
+
+Package acronym Warning: Acronym `DMA' is not defined on input line 14.
+
+
+Package acronym Warning: Acronym `DMA' is not defined on input line 14.
+
+
+Package acronym Warning: Acronym `DPU' is not defined on input line 14.
+
 ) [7
 
 
-] [8
+] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+1}) has been already used, duplicate ignored
 
-
-]
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.14 
+      <./bilder/DPU_example_design.png>]
 chapter without number
-(Appendix.tex [9] [10
+(Appendix.tex [9
+
+
+] [10
 
 
 ]
@@ -2323,11 +2413,11 @@ Package logreq Info: Writing requests to 'MA_thesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 68476 strings out of 492895
- 1640546 string characters out of 3123268
+ 68527 strings out of 492895
+ 1641137 string characters out of 3123268
  2209897 words of memory out of 3000000
- 71372 multiletter control sequences out of 15000+200000
- 544483 words of font info for 100 fonts, out of 3000000 for 9000
+ 71412 multiletter control sequences out of 15000+200000
+ 544532 words of font info for 101 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,114p,9090b,2425s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
@@ -2341,9 +2431,9 @@ rs/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl
 sfonts/cm/cmssbx10.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aruder/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on MA_thesis.pdf (21 pages, 370695 bytes).
+Output written on MA_thesis.pdf (21 pages, 435594 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 18033 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 359 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 18038 words of extra memory for PDF output out of 20736 (max. 10000000)
 
