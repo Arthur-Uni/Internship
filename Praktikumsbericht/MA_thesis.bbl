@@ -63,5 +63,35 @@
   Applications}
     \field{year}{2019}
   \endentry
+
+  \entry{dpu}{online}{}
+    \name{author}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{X1}
+    \strng{fullhash}{X1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{title}{DPU for Convolutional Neural Network v1.2}
+    \verb{url}
+    \verb https://www.xilinx.com/support/documentation/ip_documentation/dpu/v1_
+    \verb 2/pg338-dpu.pdf
+    \endverb
+    \field{day}{26}
+    \field{month}{03}
+    \field{year}{2019}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
 \enddatalist
 \endinput

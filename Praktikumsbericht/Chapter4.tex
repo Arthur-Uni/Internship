@@ -8,7 +8,7 @@ Furthermore, the \ac{IP} core provided by the \ac{DNNDK} toolkit was studied in 
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=\textwidth]{bilder/DPU_example_design.png}
-		\caption{Example system with integrated \acs{DPU}}
+		\caption{Example system with integrated \acs{DPU} \cite[p.~8]{dpu}}
 		\label{fig:dpu_example}
 \end{figure}
-Figure~\ref{fig:dpu_example} shows an example hardware design with integrated \ac{DPU} module. In this example a camera is connected via the \ac{MIPI} \ac{CSI2} interface to the \ac{PS}. \ac{DMA} is usually used in conjunction with an \ac{AXI} interconnect to communicate with the \ac{PS}. The captured images are used as the input to the neural network and the \ac{DPU} itself can be viewed as a co-processor to the \ac{PS} implemented in the \ac{PL} fabric.
+Figure~\ref{fig:dpu_example} shows an example hardware design with integrated \ac{DPU} module. In this example a camera is connected via the \ac{MIPI} \ac{CSI2} interface to the \ac{PS}. \ac{DMA} is usually used in conjunction with an \ac{AXI} interconnect to communicate with the \ac{PS}. The captured images are used as the input to the neural network and the \ac{DPU} itself can be viewed as a co-processor to the \ac{PS} implemented in the \ac{PL} fabric. The \ac{IP} core itself is customizable and the number of \ac{DPU} processor units, the size of the \ac{DPU} and the usage of \ac{DSP} blocks among other parameters are configurable. The decision on which size to use is based upon the performance demands of the application.

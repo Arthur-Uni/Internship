@@ -90,7 +90,7 @@ Document=content.tex
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=103
+Cursor=145
 
 [Frame5]
 Flags=0
@@ -144,7 +144,7 @@ Document=Chapter2.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=653
+Cursor=3249
 
 [Frame8]
 Flags=0
@@ -162,7 +162,7 @@ Document=Chapter3.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=3711
+Cursor=3143
 
 [Frame9]
 Flags=0
@@ -180,9 +180,45 @@ Document=Chapter4.tex
 
 [Frame9_View0,0]
 TopLine=0
-Cursor=2324
+Cursor=1836
+
+[Frame10]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1562
+NormalPos.bottom=659
+Class=LaTeXView
+Document=Chapter5.tex
+
+[Frame10_View0,0]
+TopLine=3
+Cursor=4147
+
+[Frame11]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1562
+NormalPos.bottom=659
+Class=LaTeXView
+Document=Chapter6.tex
+
+[Frame11_View0,0]
+TopLine=0
+Cursor=13
 
 [SessionInfo]
-FrameCount=10
-ActiveFrame=9
+FrameCount=12
+ActiveFrame=4
 

@@ -7,6 +7,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces ILSVRC winners}}{6}{figure.3.1}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Example system with integrated \acs {DPU}}}{8}{figure.4.1}% 
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Example system with integrated \acs {DPU} \cite [p.~8]{dpu}}}{10}{figure.4.1}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces \acs {FPGA} architecture overview}}{12}{figure.5.1}% 
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
