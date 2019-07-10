@@ -198,7 +198,7 @@ Document=Chapter5.tex
 
 [Frame10_View0,0]
 TopLine=3
-Cursor=4147
+Cursor=3234
 
 [Frame11]
 Flags=0
@@ -216,9 +216,9 @@ Document=Chapter6.tex
 
 [Frame11_View0,0]
 TopLine=0
-Cursor=13
+Cursor=2914
 
 [SessionInfo]
 FrameCount=12
-ActiveFrame=4
+ActiveFrame=11
 
