@@ -90,7 +90,7 @@ Document=content.tex
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=145
+Cursor=166
 
 [Frame5]
 Flags=0
@@ -197,8 +197,8 @@ Class=LaTeXView
 Document=Chapter5.tex
 
 [Frame10_View0,0]
-TopLine=3
-Cursor=3234
+TopLine=0
+Cursor=113
 
 [Frame11]
 Flags=0
@@ -216,9 +216,27 @@ Document=Chapter6.tex
 
 [Frame11_View0,0]
 TopLine=0
-Cursor=2914
+Cursor=2981
+
+[Frame12]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1562
+NormalPos.bottom=659
+Class=LaTeXView
+Document=Chapter7.tex
+
+[Frame12_View0,0]
+TopLine=0
+Cursor=1346
 
 [SessionInfo]
-FrameCount=12
-ActiveFrame=11
+FrameCount=13
+ActiveFrame=12
 

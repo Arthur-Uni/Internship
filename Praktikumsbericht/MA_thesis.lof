@@ -13,4 +13,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Rock-paper-scissors demonstrator setup}}{16}{figure.6.1}% 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces D-PHY \acs {MIPI} \acs {IP} core overview~\cite {mipi-dphy}}}{18}{figure.7.1}% 
+\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces Receiver \acs {MIPI} \acs {IP} core subsystem~\cite {mipi-rx}}}{18}{figure.7.2}% 
+\addvspace {10\p@ }
 \addvspace {10\p@ }
