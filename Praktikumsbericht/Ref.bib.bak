@@ -25,4 +25,13 @@
   url    = {https://www.xilinx.com/support/documentation/ip_documentation/mipi_dphy/v4_1/pg202-mipi-dphy.pdf},
 }
 
+@Online{mipi-rx,
+  author = {Xilinx},
+  editor = {Xliinx},
+  title  = {PG232 MIPI RX subsystem},
+  year   = {2018},
+  date   = {2018-04-04},
+  url    = {https://www.xilinx.com/support/documentation/ip_documentation/mipi_csi2_rx_subsystem/v3_0/pg232-mipi-csi2-rx.pdf},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

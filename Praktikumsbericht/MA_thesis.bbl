@@ -64,6 +64,24 @@
     \field{year}{2019}
   \endentry
 
+  \entry{openvino}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{AI on Intel - From data center to the edge - AI solutions
+  using Intel architecture}
+    \field{year}{2019}
+  \endentry
+
   \entry{dpu}{online}{}
     \name{author}{1}{}{%
       {{hash=X}{%

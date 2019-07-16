@@ -16,4 +16,8 @@
 \contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces D-PHY \acs {MIPI} \acs {IP} core overview~\cite {mipi-dphy}}}{18}{figure.7.1}% 
 \contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces Receiver \acs {MIPI} \acs {IP} core subsystem~\cite {mipi-rx}}}{18}{figure.7.2}% 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces \acs {MIPI} \acs {CSI} block design}}{20}{figure.8.1}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 9.1}{\ignorespaces OpenVINO toolkit overview~\cite {openvino}}}{23}{figure.9.1}% 
+\addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -10,5 +10,7 @@
 \contentsline {chapter}{\numberline {5}Week}{11}{chapter.5}% 
 \contentsline {chapter}{\numberline {6}Week}{15}{chapter.6}% 
 \contentsline {chapter}{\numberline {7}Week}{17}{chapter.7}% 
-\contentsline {chapter}{\nonumberline Bibliography}{19}{chapter*.40}% 
-\contentsline {chapter}{\numberline {A}Workday reports}{21}{appendix.A}% 
+\contentsline {chapter}{\numberline {8}Week}{19}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Week}{23}{chapter.9}% 
+\contentsline {chapter}{\nonumberline Bibliography}{25}{chapter*.41}% 
+\contentsline {chapter}{\numberline {A}Workday reports}{27}{appendix.A}% 
