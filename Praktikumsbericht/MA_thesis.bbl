@@ -64,6 +64,35 @@
     \field{year}{2019}
   \endentry
 
+  \entry{frameworks}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={Devopedia},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=D}{%
+         family={Devopedia},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Deep Learning Frameworks}
+    \verb{url}
+    \verb https://devopedia.org/deep-learning-frameworks
+    \endverb
+    \field{day}{22}
+    \field{month}{01}
+    \field{year}{2019}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
   \entry{openvino}{unpublished}{}
     \name{author}{1}{}{%
       {{hash=I}{%
@@ -169,6 +198,36 @@
     \field{day}{04}
     \field{month}{04}
     \field{year}{2018}
+    \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{ai_sdk}{online}{}
+    \name{author}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{X1}
+    \strng{fullhash}{X1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{title}{UG1354 Xilinx AI SDK User Guide}
+    \verb{url}
+    \verb https://www.xilinx.com/support/documentation/user_guides/ug1354-xilin
+    \verb x-ai-sdk.pdf
+    \endverb
+    \field{day}{03}
+    \field{month}{07}
+    \field{year}{2019}
     \warn{\item Can't use 'date' + 'year'}
   \endentry
 \enddatalist

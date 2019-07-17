@@ -20,4 +20,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 9.1}{\ignorespaces OpenVINO toolkit overview~\cite {openvino}}}{23}{figure.9.1}% 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 10.1}{\ignorespaces Neural network framework usage overview \cite {frameworks}}}{25}{figure.10.1}% 
+\contentsline {figure}{\numberline {\relax 10.2}{\ignorespaces \ac {AI} \ac {SDK} overview \cite {ai_sdk}}}{26}{figure.10.2}% 
+\addvspace {10\p@ }
 \addvspace {10\p@ }

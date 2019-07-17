@@ -2,7 +2,7 @@
 \babel@toc {english}{}
 \contentsline {chapter}{List of Figures}{I}{section*.2}% 
 \contentsline {chapter}{List of Tables}{III}{chapter*.3}% 
-\contentsline {chapter}{Abbreviations}{V}{chapter*.5}% 
+\contentsline {chapter}{Abbreviations}{V}{chapter*.7}% 
 \contentsline {chapter}{\numberline {1}Week}{1}{chapter.1}% 
 \contentsline {chapter}{\numberline {2}Week}{3}{chapter.2}% 
 \contentsline {chapter}{\numberline {3}Week}{5}{chapter.3}% 
@@ -12,5 +12,6 @@
 \contentsline {chapter}{\numberline {7}Week}{17}{chapter.7}% 
 \contentsline {chapter}{\numberline {8}Week}{19}{chapter.8}% 
 \contentsline {chapter}{\numberline {9}Week}{23}{chapter.9}% 
-\contentsline {chapter}{\nonumberline Bibliography}{25}{chapter*.41}% 
-\contentsline {chapter}{\numberline {A}Workday reports}{27}{appendix.A}% 
+\contentsline {chapter}{\numberline {10}Week}{25}{chapter.10}% 
+\contentsline {chapter}{\nonumberline Bibliography}{29}{chapter*.41}% 
+\contentsline {chapter}{\numberline {A}Workday reports}{31}{appendix.A}% 

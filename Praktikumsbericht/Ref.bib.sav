@@ -49,7 +49,7 @@
   url    = {https://www.xilinx.com/support/documentation/user_guides/ug1354-xilinx-ai-sdk.pdf},
 }
 
-@Online{frameworks,
+@Online{f,
   author = {Devopedia},
   editor = {Devopedia},
   title  = {Deep Learning Frameworks},
