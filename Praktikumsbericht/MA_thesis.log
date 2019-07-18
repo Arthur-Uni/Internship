@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.25)  17 JUL 2019 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.25)  18 JUL 2019 17:47
 entering extended mode
 **./MA_thesis.tex
 (MA_thesis.tex
@@ -2195,7 +2195,7 @@ Package acronym Info: Label `acro:DSP' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:SoC' newly defined as it shall be overridden
 although it is yet undefined on input line 4.
-<bilder/overview.png, id=191, 1090.82532pt x 657.95813pt>
+<bilder/overview.png, id=198, 1090.82532pt x 657.95813pt>
 File: bilder/overview.png Graphic file (type png)
 <use bilder/overview.png>
 Package pdftex.def Info: bilder/overview.png  used on input line 8.
@@ -2239,7 +2239,7 @@ chapter 2.
 Package acronym Info: Label `acro:MPSoC' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 2.
-<bilder/ZYNQ-overview.png, id=227, 692.5875pt x 221.32687pt>
+<bilder/ZYNQ-overview.png, id=234, 692.5875pt x 221.32687pt>
 File: bilder/ZYNQ-overview.png Graphic file (type png)
 <use bilder/ZYNQ-overview.png>
 Package pdftex.def Info: bilder/ZYNQ-overview.png  used on input line 6.
@@ -2288,7 +2288,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
-<bilder/ilsvrc.png, id=287, 722.7pt x 436.5108pt>
+<bilder/ilsvrc.png, id=294, 722.7pt x 436.5108pt>
 File: bilder/ilsvrc.png Graphic file (type png)
 <use bilder/ilsvrc.png>
 Package pdftex.def Info: bilder/ilsvrc.png  used on input line 9.
@@ -2317,7 +2317,7 @@ Package acronym Info: Label `acro:HDL' newly defined as it shall be overridden
 although it is yet undefined on input line 5.
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
 although it is yet undefined on input line 5.
-<bilder/DPU_example_design.png, id=329, 1001.24063pt x 554.07pt>
+<bilder/DPU_example_design.png, id=336, 1001.24063pt x 554.07pt>
 File: bilder/DPU_example_design.png Graphic file (type png)
 <use bilder/DPU_example_design.png>
 Package pdftex.def Info: bilder/DPU_example_design.png  used on input line 10.
@@ -2344,7 +2344,7 @@ although it is yet undefined on input line 4.
 
 
 ]
-<bilder/FPGA_arch.png, id=389, 659.5842pt x 288.1164pt>
+<bilder/FPGA_arch.png, id=396, 659.5842pt x 288.1164pt>
 File: bilder/FPGA_arch.png Graphic file (type png)
 <use bilder/FPGA_arch.png>
 Package pdftex.def Info: bilder/FPGA_arch.png  used on input line 10.
@@ -2364,7 +2364,7 @@ l.1 \chapter
 chapter 6.
 Package acronym Info: Label `acro:PWM' newly defined as it shall be overridden
 although it is yet undefined on input line 6.
-<bilder/demonstrator.png, id=426, 861.9402pt x 419.166pt>
+<bilder/demonstrator.png, id=433, 861.9402pt x 419.166pt>
 File: bilder/demonstrator.png Graphic file (type png)
 <use bilder/demonstrator.png>
 Package pdftex.def Info: bilder/demonstrator.png  used on input line 9.
@@ -2379,7 +2379,7 @@ l.1 \chapter
 chapter 7.
 Package acronym Info: Label `acro:CSI' newly defined as it shall be overridden
 although it is yet undefined on input line 2.
-<bilder/MIPI_dphy.png, id=452, 800.9925pt x 318.43968pt>
+<bilder/MIPI_dphy.png, id=459, 800.9925pt x 318.43968pt>
 File: bilder/MIPI_dphy.png Graphic file (type png)
 <use bilder/MIPI_dphy.png>
 Package pdftex.def Info: bilder/MIPI_dphy.png  used on input line 5.
@@ -2387,7 +2387,7 @@ Package pdftex.def Info: bilder/MIPI_dphy.png  used on input line 5.
 
 LaTeX Warning: Reference `MIPI_rx' on page 17 undefined on input line 9.
 
-<bilder/MIPI_rx.png, id=463, 451.6875pt x 269.50688pt>
+<bilder/MIPI_rx.png, id=470, 451.6875pt x 269.50688pt>
 File: bilder/MIPI_rx.png Graphic file (type png)
 <use bilder/MIPI_rx.png>
 Package pdftex.def Info: bilder/MIPI_rx.png  used on input line 12.
@@ -2413,7 +2413,7 @@ name{figure.7.2}) has been already used, duplicate ignored
 l.1 \chapter
             {Week} <./bilder/MIPI_dphy.png> <./bilder/MIPI_rx.png>]
 chapter 8.
-<bilder/mipi_csi2_rx.pdf, id=487, 614.295pt x 794.97pt>
+<bilder/mipi_csi2_rx.pdf, id=494, 614.295pt x 794.97pt>
 File: bilder/mipi_csi2_rx.pdf Graphic file (type pdf)
 <use bilder/mipi_csi2_rx.pdf>
 Package pdftex.def Info: bilder/mipi_csi2_rx.pdf  used on input line 4.
@@ -2442,7 +2442,7 @@ l.15 \end{itemize}
 
 ]
 chapter 9.
-<bilder/openVINO-overview.png, id=554, 1367.8603pt x 362.10281pt>
+<bilder/openVINO-overview.png, id=561, 1367.8603pt x 362.10281pt>
 File: bilder/openVINO-overview.png Graphic file (type png)
 <use bilder/openVINO-overview.png>
 Package pdftex.def Info: bilder/openVINO-overview.png  used on input line 5.
@@ -2455,17 +2455,17 @@ Package pdftex.def Info: bilder/openVINO-overview.png  used on input line 5.
 l.1 \chapter
             {Week} <./bilder/openVINO-overview.png>] [24]
 chapter 10.
-<bilder/nnframeworks.jpg, id=584, 1152.305pt x 344.28625pt>
+<bilder/nnframeworks.jpg, id=591, 1152.305pt x 344.28625pt>
 File: bilder/nnframeworks.jpg Graphic file (type jpg)
 <use bilder/nnframeworks.jpg>
 Package pdftex.def Info: bilder/nnframeworks.jpg  used on input line 5.
 (pdftex.def)             Requested size: 426.7914pt x 127.51524pt.
-<bilder/ai_sdk.png, id=597, 432.11438pt x 337.26pt>
+<bilder/ai_sdk.png, id=604, 432.11438pt x 337.26pt>
 File: bilder/ai_sdk.png Graphic file (type png)
 <use bilder/ai_sdk.png>
 Package pdftex.def Info: bilder/ai_sdk.png  used on input line 16.
 (pdftex.def)             Requested size: 426.7914pt x 333.1165pt.
-) [25
+) (Chapter11.tex [25
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10.1})
@@ -2473,8 +2473,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.10.1})
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.13 
-      <./bilder/nnframeworks.jpg>]
+l.1 \chapter
+            {Week} <./bilder/nnframeworks.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26pdfTeX warning (ext4): destination with the same identifier (name{figure.10
@@ -2482,18 +2482,78 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.20 
-      <./bilder/ai_sdk.png>] [27] [28
+l.1 \chapter
+            {Week} <./bilder/ai_sdk.png>] [27] [28
+
+
+]
+chapter 11.
+<bilder/dpu_hier.pdf, id=644, 614.295pt x 794.97pt>
+File: bilder/dpu_hier.pdf Graphic file (type pdf)
+<use bilder/dpu_hier.pdf>
+Package pdftex.def Info: bilder/dpu_hier.pdf  used on input line 5.
+(pdftex.def)             Requested size: 426.7914pt x 552.32666pt.
+Package acronym Info: Label `acro:PLL' newly defined as it shall be overridden
+although it is yet undefined on input line 9.
+
+Package acronym Warning: Acronym `PLL' is not defined on input line 9.
+
+
+Package acronym Warning: Acronym `PLL' is not defined on input line 9.
+
+Package acronym Info: Label `acro:QEMU' newly defined as it shall be overridden
+
+although it is yet undefined on input line 10.
+
+Package acronym Warning: Acronym `QEMU' is not defined on input line 10.
+
+
+Package acronym Warning: Acronym `QEMU' is not defined on input line 10.
+
+
+Package acronym Warning: Acronym `QEMU' is not defined on input line 10.
+
+) (Chapter12.tex
+Underfull \vbox (badness 1478) has occurred while \output is active []
+
+ [29]
+
+LaTeX Warning: Text page 30 contains only floats.
+
+
+Underfull \vbox (badness 5970) has occurred while \output is active []
+
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+.1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.1 \chapter
+            {Week} <./bilder/dpu_hier.pdf, page is rotated 270 degrees>]
+[31] [32
+
+
+]
+chapter 12.
+Package acronym Info: Label `acro:PCB' newly defined as it shall be overridden
+although it is yet undefined on input line 2.
+
+Package acronym Warning: Acronym `PCB' is not defined on input line 2.
+
+
+Package acronym Warning: Acronym `PCB' is not defined on input line 2.
+
+) [33] [34
 
 
 ]
 chapter without number
-(Appendix.tex [29] [30
+(Appendix.tex [35] [36
 
 
 ]
 chapter A.
-)) [31]
+)) [37]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (MA_thesis.aux)
@@ -2514,10 +2574,10 @@ Package logreq Info: Writing requests to 'MA_thesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 68759 strings out of 492895
- 1644619 string characters out of 3123268
+ 68802 strings out of 492895
+ 1645245 string characters out of 3123268
  2210897 words of memory out of 3000000
- 71506 multiletter control sequences out of 15000+200000
+ 71530 multiletter control sequences out of 15000+200000
  546580 words of font info for 127 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,114p,9090b,2570s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2535,9 +2595,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aruder/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/aru
 der/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 >
-Output written on MA_thesis.pdf (41 pages, 2939379 bytes).
+Output written on MA_thesis.pdf (47 pages, 2986564 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
- 20174 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 858 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
+ 20195 words of extra memory for PDF output out of 20736 (max. 10000000)
 
