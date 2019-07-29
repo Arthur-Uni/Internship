@@ -1,2 +1,23 @@
 \chapter{Week}
-This week the first samples of the Mars ST3 base board were available at the company after the usual bring up process for internal use. The bring up typically involves testing the hardware as thoroughly as possible and weed out errors in the \ac{PCB} design and the providing reference designs for the new board, which is compatible with all Mars \ac{FPGA} modules. My task was to make a small \ac{AI} demonstrator using this new base board and a Mars XU3 module. The reason for choosing the XU3 with the Zynq \ac{MPSoC} instead of the smaller Zynq 7000 \ac{SoC} was the compatibility of the Xilinx \ac{DPU} \ac{IP} core. The publicly released version was only suitable for Zynq Ultrascale devices. Support for Zynq 7000 \ac{SoC} would be added in a future release.
+This week the first samples of the Mars ST3 base board were available at the company after the usual bring up process for internal use. The bring up typically involves testing the hardware as thoroughly as possible and weed out errors in the \ac{PCB} design and the providing reference designs for the new board, which is compatible with all Mars \ac{FPGA} modules. My task was to make a small \ac{AI} demonstrator using this new base board and a Mars XU3 module. The reason for choosing the XU3 with the Zynq \ac{MPSoC} instead of the smaller Zynq 7000 \ac{SoC} was the compatibility of the Xilinx \ac{DPU} \ac{IP} core. The publicly released version was only suitable for Zynq Ultrascale devices. Support for Zynq 7000 \ac{SoC} would be added in a future release. I decided to port the \ac{DNNDK} sample applications to the Enclustra hardware. There were several reasons for this:
+\begin{itemize}
+	\item As the CEO of Enclustra would be attending a Xilinx conference in early June, having an \ac{AI} demonstrator to showcase would be great. This left only a few weeks for development.
+	\item I was already familiar with the Xilinx \ac{DNNDK} work flow and due to the timing constraints this course of action was the most promising.
+	\item No neural network needed to be trained as the already trained models from the \ac{DNNDK} can be used.
+	\item The necessary hardware integration was completed successfully in the previous weeks for the XU3 module and therefore could be used for porting the sample applications to the complete hardware design with the new Mars ST3 board.
+\end{itemize}
+The main difficulty was posed by the Petalinux implementation as there are no official guidelines by Xilinx for custom boards. However, the official Xilinx tutorial found at \href{https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration}{https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration} provides an excellent starting point for custom projects. After a few adjustments to the device tree specific to the Enclustra hardware and Petalinux configuration adjustments for the exported .hdf file, the resnet50 image classification application was successfully running on the Enclustra hardware. The setup is shown in figure~\ref{fig:st3_demo_resnet}.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/placeholder.png}
+		\caption{resnet50 demonstrator overview}
+		\label{fig:st3_demo_resnet}
+\end{figure}
+This first version of the demonstrator consists of a \ac{DP} monitor, the Mars ST3 base board, the Mars XU3 module and a serial connection to control the application via terminal from the host PC (adding keyboard and mouse to the \ac{FPGA} module itself would make this step obsolete).
+A toggle button was implemented to allow switching between two modes, going through the data set one by one or classifying all images in the data set as fast as possible. One mode is to show the correct result of the classification as otherwise the classification is too fast to observe by eye. The other mode is to show the classification speed. An example for this can be seen in figure~\ref{fig:resnet_classification}.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/placeholder.png}
+		\caption{resnet50 classification example}
+		\label{fig:resnet_classification}
+\end{figure}
