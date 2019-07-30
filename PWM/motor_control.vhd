@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity pwm_generator is
+entity motor_control is
     generic (   
                 max_count_clock_division : integer := 8; --divisor to slow down clock
                 max_count                : integer := 4  --number of intervals of slowed down clock
@@ -14,9 +14,9 @@ entity pwm_generator is
                 duty_cycle  : in STD_LOGIC_VECTOR (2 downto 0);
                 pwm_out 	: out STD_LOGIC
             );
-end pwm_generator;
+end motor_control;
 
-architecture Behavioral of pwm_generator is
+architecture Behavioral of motor_control is
     
     signal clk_counter : integer range 0 to max_count_clock_division;
     signal clk_div :     std_logic;
