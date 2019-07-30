@@ -9,7 +9,7 @@ entity pwm_generator is
             );
     Port (      clk 		: in STD_LOGIC;
                 areset_n 	: in STD_LOGIC;
-                duty        : in STD_LOGIC_VECTOR (2 downto 0);
+                duty_cycle  : in STD_LOGIC_VECTOR (2 downto 0);
                 pwm_out 	: out STD_LOGIC
             );
 end pwm_generator;
@@ -17,8 +17,8 @@ end pwm_generator;
 architecture Behavioral of pwm_generator is
     
     signal clk_counter : integer range 0 to max_count_clock_division;
-    signal clk_div : std_logic;
-    signal counter : integer range 0 to max_count;
+    signal clk_div :     std_logic;
+    signal counter :     integer range 0 to max_count;
     
     begin
     
@@ -50,6 +50,6 @@ architecture Behavioral of pwm_generator is
                 end if;
             end process;
         
-        pwm_out <= '1' when counter < to_integer(unsigned(duty)) else '0';
+        pwm_out <= '1' when counter < to_integer(unsigned(duty_cycle)) else '0';
     
     end Behavioral;
