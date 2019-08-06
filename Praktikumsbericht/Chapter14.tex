@@ -1,2 +1,10 @@
 \chapter{Week}
-The need for a quality data set and the amount of data that needed to be collected made automation of the process necessary to speed things up. The hardware that we wanted to use for the demonstrator was the Mars XU3 module and the Mars ST3 base board. Furthermore, the RPi camera utilizing a \ac{MIPI} connector was to be used. For the collection of the data set
+The need for a quality data set and the amount of data that needed to be collected made automation of the process necessary to speed things up. The hardware that we wanted to use for the demonstrator was the Mars XU3 module and the Mars ST3 base board. Furthermore, the RPi camera utilizing a \ac{MIPI} connector was to be used. The easiest way to obtain the necessary amount of data (about 10k pictures in total) needed was to use the Raspberry Pi together with the camera. The operating system on the Raspberry Pi provides all the functions to obtain videos quickly and extract frames from videos. For the collection of a good quality data set variation is key. Therefore, the contribution of as many people as possible is necessary. The setup for collecting the data set looked as follows:
+\begin{itemize}
+	\item take videos of each subject
+	\item 150 seconds per symbol per subject
+	\item extract frames from the video
+	\item structure the data so it gets labeled directly (ROCK, PAPER, SCISSORS, ILLEGAL)
+\end{itemize}
+To automatize this process, a shell script was written handling all of the tasks mentioned above. The script generates the necessary folder structure, takes the video and saves it. A conversion from .h264 to .mp4 format is done to easier extract the frames from the video. After discussing the frame size with Synthara, a video resolution of 320x240 with a framerate of 60 fps was chosen. This is the lowest resolution supported by the camera drivers for the Raspberry Pi.
+The test setup was build up in the kitchen area, so as to get as many people as possible to contribute to the data set collection. In order to have everybody know what to do, a short presentation was prepared to inform the colleagues of the purpose of this data set collection and also the procedure. Details were given about what constitutes a quality data set and how to obtain it. Emphasis was laid upon how to move the subjects hand and arm in order to generate useful data.
