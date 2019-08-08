@@ -7,4 +7,10 @@ The need for a quality data set and the amount of data that needed to be collect
 	\item structure the data so it gets labeled directly (ROCK, PAPER, SCISSORS, ILLEGAL)
 \end{itemize}
 To automatize this process, a shell script was written handling all of the tasks mentioned above. The script generates the necessary folder structure, takes the video and saves it. A conversion from .h264 to .mp4 format is done to easier extract the frames from the video. After discussing the frame size with Synthara, a video resolution of 320x240 with a framerate of 60 fps was chosen. This is the lowest resolution supported by the camera drivers for the Raspberry Pi.
-The test setup was build up in the kitchen area, so as to get as many people as possible to contribute to the data set collection. In order to have everybody know what to do, a short presentation was prepared to inform the colleagues of the purpose of this data set collection and also the procedure. Details were given about what constitutes a quality data set and how to obtain it. Emphasis was laid upon how to move the subjects hand and arm in order to generate useful data.
+The test setup was build up in the kitchen area, so as to get as many people as possible to contribute to the data set collection. In order to have everybody know what to do, a short presentation was prepared to inform the colleagues of the purpose of this data set collection and also the procedure. Details were given about what constitutes a quality data set and how to obtain it. Emphasis was laid upon how to move the subjects hand and arm in order to generate useful data. Emphasis was laid on not moving the hand out of the camera frame, as this would generate a lot of falsely labeled data, which in turn degrades the network performance during training significantly. A diagram of the data collection setup is shown in figure~\ref{fig:setup}.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/placeholder.png}
+		\caption{Data set collection setup}
+		\label{fig:setup}
+\end{figure}
