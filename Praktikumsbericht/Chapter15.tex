@@ -1,3 +1,9 @@
 \chapter{Week}
 The majority of this week was spent collecting the data set. Therefore, the data collection setup was build up in the kitchen area and various employees were asked to participate. I went from one to the after I was done with one subject. A total of 10 minutes per subject of data was captured via video. As mentioned before, a Raspberry Pi was used with the script I created to collect the data and automatize as much of the process as possible. During the data set collection I assisted in keeping the movements of the subject in check and talk them through the collection process. For each of the symbols (ROCK, PAPER, SCISSORS, ILLEGAL) a video of 150 seconds was recorded. After each symbol, a short break was incorporated, as this seemingly small time period already puts a strain on the arm. This process was repeated for any employee that was available.
-On Wednesday, I traveled to Lausanne to attend an Intel seminar on \ac{AI} inference with Intel products.
+On Wednesday, I traveled to Lausanne to attend an Intel seminar on \ac{AI} inference with Intel products. The main reason for going to this event was to acquire more knowledge of the OpenVINO toolkit for \ac{FPGA}. In addition, a block of the seminar dealt with data set preparation and augmentation for training neural networks. One of the key methods to create the necessary amount of data is data augmentation. This can be described as oversampling the data set, basically creating more data from existing data by rotating, shifting, zooming and other image manipulations. In this way, the data set can be evenly balanced as well so that each class has a similar amount of images. The data set is then separated into three subsets:
+\begin{itemize}
+	\item training set: data used to train the network
+	\item validation set: subset of the test set used for hyperparameter tuning (learning rate, momentum, etc.)
+	\item test set: data that the network has not seen during training, which is used for a full evaluation of the performance of the network
+\end{itemize}
+The augmentation process only applies to the training set.
