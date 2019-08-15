@@ -17,14 +17,14 @@ petalinux-create -t project -n $PRJ_NAME --template $PRJ_TMPL
 DPU_GIT_PATH=/home/arthur/Petalinux_Projects/DPU-Integration/reference-files/files
 
 echo "Copying necessary files from DPU integration tutorial..."
-cp -rp $DPU_GIT_PATH/recipes-support $PRJ_NAME/project-spec/meta-user
-cp -rp $DPU_GIT_PATH/recipes-devtools $PRJ_NAME/project-spec/meta-user
-cp -rp $DPU_GIT_PATH/recipes-kernel $PRJ_NAME/project-spec/meta-user
-cp -rp $DPU_GIT_PATH/recipes-apps/dnndk/ $PRJ_NAME/project-spec/meta-user/recipes-apps/
-cp -rp $DPU_GIT_PATH/recipes-modules $PRJ_NAME/project-spec/meta-user
-cp -rp $DPU_GIT_PATH/recipes-apps/autostart $PRJ_NAME/project-spec/meta-user/recipes-apps/
-cp -rp $DPU_GIT_PATH/recipes-core/base-files/ $PRJ_NAME/project-spec/meta-user/recipes-core/
-cp $DPU_GIT_PATH/petalinuxbsp.conf $PRJ_NAME/project-spec/meta-user/conf/
+#cp -rp $DPU_GIT_PATH/recipes-support $PRJ_NAME/project-spec/meta-user
+#cp -rp $DPU_GIT_PATH/recipes-devtools $PRJ_NAME/project-spec/meta-user
+#cp -rp $DPU_GIT_PATH/recipes-kernel $PRJ_NAME/project-spec/meta-user
+cp -rp $DPU_GIT_PATH/recipes-apps/dnndk/ $PRJ_NAME/project-spec/meta-user/recipes-apps/ #check
+cp -rp $DPU_GIT_PATH/recipes-modules $PRJ_NAME/project-spec/meta-user #check
+cp -rp $DPU_GIT_PATH/recipes-apps/autostart $PRJ_NAME/project-spec/meta-user/recipes-apps/ #check
+cp -rp $DPU_GIT_PATH/recipes-core/base-files/ $PRJ_NAME/project-spec/meta-user/recipes-core/ #check
+#cp $DPU_GIT_PATH/petalinuxbsp.conf $PRJ_NAME/project-spec/meta-user/conf/
 echo "Copying done"
 
 echo "Modifying petalinux-image.bbappend..."
