@@ -39,16 +39,17 @@ architecture Behavioral of pwm_generator is
                 end if;
             end process;
             
-    -- process sensitive to slowed down clock signal    
-        process (clk_div, areset_n) is
+        process (clk, areset_n) is
             begin
                 if areset_n = '0' then
                     counter <= 0;
-                elsif rising_edge(clk_div) then
-                    if counter = max_count-1 then
-                        counter <= 0;
-                    else
-                        counter <= counter + 1;
+                elsif rising_edge(clk) then
+                    if(clk_div = '1') then
+                        if counter = max_count-1 then
+                            counter <= 0;
+                        else
+                            counter <= counter + 1;
+                        end if;
                     end if;
                 end if;
             end process;
