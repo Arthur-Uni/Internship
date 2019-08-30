@@ -272,7 +272,7 @@ The rest of the week was spent collecting more data from Enclustra employees wit
 \subsection{Data set collection}
 The final data set collection amounted to 11503 images with a distribution of 2838 images for the 'ROCK' class, 2820 images for the 'PAPER' class, 2814 images for the 'SCISSORS' class and 2749 images for the 'ILLEGAL' symbol class. The 'BACKGROUND' class consists of 282 images. To add to this number a publicly available data set was also added to the collection containing 2188 images in total distributed almost equally amongst the classes 'ROCK', 'PAPER' and 'SCISSORS'. The complete data set was then handed of to Synthara for the training process as agreed when starting the collaboration. The data set was augmented as described in the chapter before and then iteratively quantized to compress the network.
 \subsection{Robot hand ordering}
-As the training process would take up to two weeks at least, the next reasonable step was to work on the hardware setup with the Enclustra board. A crucial part for this is the robotic hand. At first, I conducted research into the available possibilities: There are numerous options ranging from cheap ($\sim 50$ \$) servo motor controlled basic hands to more sophisticated 3D-printed medical variants (several thousand \$). For this demonstrator the key parameter was speed, so that the robot hand would react in time to the classification results provided by the neural network. The key parameter for this is how quickly the attached servos can go from 0 $^\circ$ to 180 $^\circ$. The typical value for this is around 1 to 2 $ms$ for the cheaper robotic hands. The more expensive 3D printed ones were taken out of consideration because of the cost.
+As the training process would take up to two weeks at least, the next reasonable step was to work on the hardware setup with the Enclustra board. A crucial part for this is the robotic hand. At first, I conducted research into the available possibilities: There are numerous options ranging from cheap ($\sim 50$ \$) servo motor controlled basic hands to more sophisticated 3D-printed medical variants (several thousand \$). For this demonstrator the key parameter was speed, so that the robot hand would react in time to the classification results provided by the neural network. The key parameter for this is how quickly the attached servos can go from 0 $^\circ$ to 180 $^\circ$. The typical value for this is around 1 to 2 $ms$ for the cheaper robotic hands.
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=0.5\textwidth]{bilder/robohand.jpg}
@@ -288,3 +288,19 @@ Figure~\ref{fig:robohand} shows the chosen robotic hand. The benefits of this sy
 \end{figure}
 \subsection{Internship documentation}
 The rest of the week was spent on writing documentation of all of the tasks I completed during my internship so far and integrate this information into the company Wiki.
+
+\section{Week 17}
+\subsection{Robot hand ordering}
+More expensive robot hands were also investigated. These are mostly 3D printed hands capable of much more sophisticated movements as their intended use is in medicine as limb replacements and bionics. The cost was the main deciding factor in the end and after discussions with my supervisor and the CEO of Enclustra the order was placed for a cheap robot hand from a Chinese manufacturer. This also meant several work days of shipping had to be taken into account.
+\subsection{Synthara update}
+The first training results were also shared by Synthara. The training was progressing well and a floating point base line was established. The floating base line with the data set so far is: 100 \% train accuracy, 88 \% validation accuracy and 75 \% test accuracy. The goal before going to the next step is to bring test accuracy above 85 \%.  However, there was still fine tuning of the parameters to do and also the quantization step.
+\subsection{Internship documentation}
+The rest of the week was spent on writing documentation of all of the tasks I completed during my internship so far and integrate this information into the company Wiki. The main part here was documenting all the steps included in recreating the \ac{DNNDK} design for the Mars ST3 demonstrator board. A picture of the hardware is shown in figure~\ref
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=0.75\textwidth]{bilder/ST3_demonstrator.jpg}
+		\caption{Mars ST3 \ac{DNNDK} demonstrator}
+		\label{fig:st3_demonstrator}
+\end{figure}
+
+\section{Week 18}
