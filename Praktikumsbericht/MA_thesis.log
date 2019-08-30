@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (MiKTeX 2.9.7050 64-bit)  (format=lualatex 2019.8.28)  28 AUG 2019 18:23
+This is LuaTeX, Version 1.10.0 (MiKTeX 2.9.7050 64-bit)  (format=lualatex 2019.8.28)  30 AUG 2019 15:50
  restricted system commands enabled.
 **MA_thesis.tex
 (./MA_thesis.tex
@@ -48,7 +48,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.878 seconds
+luaotfload | main : initialization completed in 0.870 seconds
 
 ("C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrbo
 ok.cls"
@@ -2217,11 +2217,14 @@ Overfull \hbox (3.0887pt too wide) in paragraph at lines 48--48
 repa- 
  []
 
-)
+[4])
 \tf@toc=\write6
 
 \openout6 = MA_thesis.toc
- [4]
+ [5] [6
+
+
+]
 Package tocbasic Info: character protrusion at lof deactivated on input line 160
 .
  (./MA_thesis.lof
@@ -2229,13 +2232,14 @@ Package acronym Info: Label `acro:AI' newly defined as it shall be overridden
 although it is yet undefined on input line 15.
 Package acronym Info: Label `acro:SDK' newly defined as it shall be overridden
 although it is yet undefined on input line 15.
+Package acronym Info: Label `acro:DNNDK' newly defined as it shall be overridden
+
+although it is yet undefined on input line 24.
 )
 \tf@lof=\write7
 
 \openout7 = MA_thesis.lof
  [1
-
-
 
 
 ] [2
@@ -2293,7 +2297,7 @@ Package acronym Info: Label `acro:DSP' newly defined as it shall be overridden
 although it is yet undefined on input line 5.
 Package acronym Info: Label `acro:SoC' newly defined as it shall be overridden
 although it is yet undefined on input line 6.
-<bilder/overview.png, id=311, 1090.82532pt x 657.95813pt>
+<bilder/overview.png, id=340, 1090.82532pt x 657.95813pt>
 File: bilder/overview.png Graphic file (type png)
 <use bilder/overview.png>
 Package luatex.def Info: bilder/overview.png  used on input line 11.
@@ -2303,9 +2307,6 @@ although it is yet undefined on input line 15.
 Package acronym Info: Label `acro:ASIC' newly defined as it shall be overridden
 although it is yet undefined on input line 15.
 Package acronym Info: Label `acro:CPU' newly defined as it shall be overridden
-although it is yet undefined on input line 15.
-Package acronym Info: Label `acro:DNNDK' newly defined as it shall be overridden
-
 although it is yet undefined on input line 15.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
@@ -2318,7 +2319,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 Package acronym Info: Label `acro:MPSoC' newly defined as it shall be overridden
 
 although it is yet undefined on input line 19.
-<bilder/ZYNQ-overview.png, id=340, 692.5875pt x 221.32687pt>
+<bilder/ZYNQ-overview.png, id=368, 692.5875pt x 221.32687pt>
 File: bilder/ZYNQ-overview.png Graphic file (type png)
 <use bilder/ZYNQ-overview.png>
 Package luatex.def Info: bilder/ZYNQ-overview.png  used on input line 23.
@@ -2354,12 +2355,14 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.2
 <./bilder/ZYNQ-overview.png>]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
 [4]
-<bilder/ilsvrc.png, id=409, 722.7pt x 436.5108pt>
+<bilder/ilsvrc.png, id=436, 722.7pt x 436.5108pt>
 File: bilder/ilsvrc.png Graphic file (type png)
 <use bilder/ilsvrc.png>
 Package luatex.def Info: bilder/ilsvrc.png  used on input line 40.
 (luatex.def)             Requested size: 426.7914pt x 257.78557pt.
- [5
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+[5
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.3
 '
 <./bilder/ilsvrc.png>]
@@ -2372,8 +2375,10 @@ Package acronym Info: Label `acro:HDL' newly defined as it shall be overridden
 although it is yet undefined on input line 55.
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
 although it is yet undefined on input line 55.
- [6]
-<bilder/DPU_example_design.png, id=448, 1001.24063pt x 554.07pt>
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+[6]
+<bilder/DPU_example_design.png, id=473, 1001.24063pt x 554.07pt>
 File: bilder/DPU_example_design.png Graphic file (type png)
 <use bilder/DPU_example_design.png>
 Package luatex.def Info: bilder/DPU_example_design.png  used on input line 60.
@@ -2391,7 +2396,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.4
 Package acronym Info: Label `acro:MAC' newly defined as it shall be overridden
 although it is yet undefined on input line 70.
  [8]
-<bilder/FPGA_arch.png, id=506, 659.5842pt x 288.1164pt>
+<bilder/FPGA_arch.png, id=531, 659.5842pt x 288.1164pt>
 File: bilder/FPGA_arch.png Graphic file (type png)
 <use bilder/FPGA_arch.png>
 Package luatex.def Info: bilder/FPGA_arch.png  used on input line 76.
@@ -2404,7 +2409,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.5
 <./bilder/FPGA_arch.png>] [10]
 Package acronym Info: Label `acro:PWM' newly defined as it shall be overridden
 although it is yet undefined on input line 94.
-<bilder/demonstrator.png, id=545, 861.9402pt x 419.166pt>
+<bilder/demonstrator.png, id=571, 861.9402pt x 419.166pt>
 File: bilder/demonstrator.png Graphic file (type png)
 <use bilder/demonstrator.png>
 Package luatex.def Info: bilder/demonstrator.png  used on input line 97.
@@ -2415,7 +2420,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.6
 <./bilder/demonstrator.png>]
 Package acronym Info: Label `acro:CSI' newly defined as it shall be overridden
 although it is yet undefined on input line 106.
-<bilder/MIPI_dphy.png, id=571, 800.9925pt x 318.43968pt>
+<bilder/MIPI_dphy.png, id=596, 800.9925pt x 318.43968pt>
 File: bilder/MIPI_dphy.png Graphic file (type png)
 <use bilder/MIPI_dphy.png>
 Package luatex.def Info: bilder/MIPI_dphy.png  used on input line 109.
@@ -2424,13 +2429,13 @@ Package luatex.def Info: bilder/MIPI_dphy.png  used on input line 109.
 
 LaTeX Warning: Reference `MIPI_rx' on page 12 undefined on input line 113.
 
-<bilder/MIPI_rx.png, id=582, 451.6875pt x 269.50688pt>
+<bilder/MIPI_rx.png, id=607, 451.6875pt x 269.50688pt>
 File: bilder/MIPI_rx.png Graphic file (type png)
 <use bilder/MIPI_rx.png>
 Package luatex.def Info: bilder/MIPI_rx.png  used on input line 116.
 (luatex.def)             Requested size: 426.7914pt x 254.66888pt.
 [12]
-<bilder/mipi_csi2_rx.pdf, id=604, 614.295pt x 794.97pt>
+<bilder/mipi_csi2_rx.pdf, id=629, 614.295pt x 794.97pt>
 File: bilder/mipi_csi2_rx.pdf Graphic file (type pdf)
 <use bilder/mipi_csi2_rx.pdf>
 Package luatex.def Info: bilder/mipi_csi2_rx.pdf  used on input line 126.
@@ -2458,7 +2463,7 @@ Underfull \vbox (badness 5970) has occurred while \output is active []
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.9
 '
 <./bilder/mipi_csi2_rx.pdf>]
-<bilder/openVINO-overview.png, id=671, 1367.8603pt x 362.10281pt>
+<bilder/openVINO-overview.png, id=696, 1367.8603pt x 362.10281pt>
 File: bilder/openVINO-overview.png Graphic file (type png)
 <use bilder/openVINO-overview.png>
 Package luatex.def Info: bilder/openVINO-overview.png  used on input line 147.
@@ -2467,13 +2472,13 @@ Package luatex.def Info: bilder/openVINO-overview.png  used on input line 147.
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.1
 0'
 <./bilder/openVINO-overview.png>]
-<bilder/nnframeworks.jpg, id=699, 1152.305pt x 344.28625pt>
+<bilder/nnframeworks.jpg, id=724, 1152.305pt x 344.28625pt>
 File: bilder/nnframeworks.jpg Graphic file (type jpg)
 <use bilder/nnframeworks.jpg>
 Package luatex.def Info: bilder/nnframeworks.jpg  used on input line 160.
 (luatex.def)             Requested size: 426.7914pt x 127.51524pt.
  [17]
-<bilder/ai_sdk.png, id=717, 432.11438pt x 337.26pt>
+<bilder/ai_sdk.png, id=742, 432.11438pt x 337.26pt>
 File: bilder/ai_sdk.png Graphic file (type png)
 <use bilder/ai_sdk.png>
 Package luatex.def Info: bilder/ai_sdk.png  used on input line 171.
@@ -2482,7 +2487,7 @@ Package luatex.def Info: bilder/ai_sdk.png  used on input line 171.
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.1
 1'
 <./bilder/nnframeworks.jpg>]
-<bilder/dpu_hier.pdf, id=745, 614.295pt x 794.97pt>
+<bilder/dpu_hier.pdf, id=770, 614.295pt x 794.97pt>
 File: bilder/dpu_hier.pdf Graphic file (type pdf)
 <use bilder/dpu_hier.pdf>
 Package luatex.def Info: bilder/dpu_hier.pdf  used on input line 186.
@@ -2536,7 +2541,7 @@ Package acronym Warning: Acronym `PCB' is not defined on input line 198.
 Package acronym Warning: Acronym `PCB' is not defined on input line 198.
 
 [22]
-<bilder/placeholder.png, id=812, 1927.2pt x 1284.8pt>
+<bilder/placeholder.png, id=837, 1927.2pt x 1284.8pt>
 File: bilder/placeholder.png Graphic file (type png)
 <use bilder/placeholder.png>
 Package luatex.def Info: bilder/placeholder.png  used on input line 208.
@@ -2561,7 +2566,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.1
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.1
 5'
 ]
-<bilder/dataset_overview.png, id=838, 1248.91594pt x 709.14937pt>
+<bilder/dataset_overview.png, id=863, 1248.91594pt x 709.14937pt>
 File: bilder/dataset_overview.png Graphic file (type png)
 <use bilder/dataset_overview.png>
 Package luatex.def Info: bilder/dataset_overview.png  used on input line 228.
@@ -2589,7 +2594,7 @@ Package luatex.def Info: bilder/placeholder.png  used on input line 265.
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.1
 8'
 ]
-<bilder/robohand.jpg, id=873, 752.8125pt x 752.8125pt>
+<bilder/robohand.jpg, id=899, 752.8125pt x 752.8125pt>
 File: bilder/robohand.jpg Graphic file (type jpg)
 <use bilder/robohand.jpg>
 Package luatex.def Info: bilder/robohand.jpg  used on input line 278.
@@ -2598,7 +2603,7 @@ Package luatex.def Info: bilder/robohand.jpg  used on input line 278.
 
 Package acronym Warning: Acronym `PCB' is not defined on input line 282.
 
-<bilder/pwm.png, id=878, 447.92343pt x 342.5297pt>
+<bilder/pwm.png, id=904, 447.92343pt x 342.5297pt>
 File: bilder/pwm.png Graphic file (type png)
 <use bilder/pwm.png>
 Package luatex.def Info: bilder/pwm.png  used on input line 285.
@@ -2606,24 +2611,45 @@ Package luatex.def Info: bilder/pwm.png  used on input line 285.
 [30
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.1
 9'
-<./bilder/robohand.jpg>]) [31
+<./bilder/robohand.jpg>] [31
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.2
 0'
-<./bilder/pwm.png>] [32
+<./bilder/pwm.png>]
+<bilder/ST3_demonstrator.jpg, id=921, 4175.6pt x 3131.7pt>
+File: bilder/ST3_demonstrator.jpg Graphic file (type jpg)
+<use bilder/ST3_demonstrator.jpg>
+Package luatex.def Info: bilder/ST3_demonstrator.jpg  used on input line 301.
+(luatex.def)             Requested size: 320.09354pt x 240.02823pt.
+ [32
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.2
+1'
+<./bilder/ST3_demonstrator.jpg>]
 
+LaTeX Warning: Reference `fig:ew_booth' on page 33 undefined on input line 332.
 
-]
+<bilder/RPS_sketchup.png, id=936, 1228.59pt x 788.9475pt>
+File: bilder/RPS_sketchup.png Graphic file (type png)
+<use bilder/RPS_sketchup.png>
+Package luatex.def Info: bilder/RPS_sketchup.png  used on input line 335.
+(luatex.def)             Requested size: 320.09354pt x 205.54285pt.
+[33]) [34
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.2
+2'
+<./bilder/RPS_sketchup.png>]
 chapter without number
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(./Appendix.tex [33] [34
+(./Appendix.tex [35
+
+
+] [36
 
 
 ]
 chapter A.
-)) [35]
+)) [37]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./MA_thesis.aux)
@@ -2645,16 +2671,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
 )
 
 Here is how much of LuaTeX's memory you used:
- 69964 strings out of 494291
+ 70013 strings out of 494291
  100000,2373549 words of node,token memory allocated
- 819 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 3 glue, 4 kern, 1 glyph, 34 attribute, 87 gl
-ue_spec, 19 attribute_list, 2 write, 9 pdf_action nodes
-   avail lists: 1:9,2:1684,3:247,4:81,5:267,6:67,7:3900,8:123,9:309,10:24,11:290
+ 831 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 3 glue, 4 kern, 1 glyph, 36 attribute, 87 gl
+ue_spec, 20 attribute_list, 2 write, 10 pdf_action nodes
+   avail lists: 1:9,2:1834,3:256,4:82,5:264,6:73,7:3855,8:123,9:342,10:24,11:285
 ,12:2
- 72054 multiletter control sequences out of 65536+200000
+ 72076 multiletter control sequences out of 65536+200000
  65 fonts using 9140127 bytes
- 73i,10n,114p,9087b,2499s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,10n,114p,9087b,3482s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/aruder/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmmo
 no12-regular.otf><c:/users/aruder/appdata/local/programs/miktex 2.9/fonts/openty
 pe/public/lm/lmromancaps10-regular.otf><c:/users/aruder/appdata/local/programs/m
@@ -2671,9 +2697,9 @@ nts/cm/cmmi12.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr12.pfb><C:/Users/aruder/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aruder/AppData/Local/Progra
 ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on MA_thesis.pdf (45 pages, 3186477 bytes).
+Output written on MA_thesis.pdf (49 pages, 4715921 bytes).
 
-PDF statistics: 1173 PDF objects out of 1200 (max. 8388607)
- 202 named destinations out of 1000 (max. 131072)
- 472 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1265 PDF objects out of 1440 (max. 8388607)
+ 217 named destinations out of 1000 (max. 131072)
+ 560 words of extra memory for PDF output out of 10000 (max. 100000000)
 

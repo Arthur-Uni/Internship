@@ -295,7 +295,7 @@ More expensive robot hands were also investigated. These are mostly 3D printed h
 \subsection{Synthara update}
 The first training results were also shared by Synthara. The training was progressing well and a floating point base line was established. The floating base line with the data set so far is: 100 \% train accuracy, 88 \% validation accuracy and 75 \% test accuracy. The goal before going to the next step is to bring test accuracy above 85 \%.  However, there was still fine tuning of the parameters to do and also the quantization step.
 \subsection{Internship documentation}
-The rest of the week was spent on writing documentation of all of the tasks I completed during my internship so far and integrate this information into the company Wiki. The main part here was documenting all the steps included in recreating the \ac{DNNDK} design for the Mars ST3 demonstrator board. A picture of the hardware is shown in figure~\ref
+The rest of the week was spent on writing documentation of all of the tasks I completed during my internship so far and integrate this information into the company Wiki. The main part here was documenting all the steps included in recreating the \ac{DNNDK} design for the Mars ST3 demonstrator board. A picture of the hardware is shown in figure~\ref{fig:st3_demonstrator}.
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=0.75\textwidth]{bilder/ST3_demonstrator.jpg}
@@ -304,3 +304,42 @@ The rest of the week was spent on writing documentation of all of the tasks I co
 \end{figure}
 
 \section{Week 18}
+\subsection{Internship documentation}
+While waiting for further training results, some more documentation was worked on. A company profile for Synthara was written on the internal Wiki page as well as a summary of the collaboration project.
+\subsection{Synthara update}
+The new training results were also shared by Synthara. After establishing the floating point base line, the limited precision training phase was started. One characteristic of running neural network inference is that the network performance does not degrade when reducing number precision. This is actually the key for making \acp{FPGA} a viable platform for \ac{ML} applications among other things. The reason for this is that reducing the precision can be thought of as adding noise to the neural network and helps generalize the network performance, preventing overfitting and resulting in the same accuracy (or slightly worse or slightly better) in reduced precision compared to 32 bit floating point precision. Reducing the number of bits needed to represent the numbers is beneficial on the whole system as all hardware components needed for computation need less resources. The results with limited precision are as follows: training 79 \%, validation 92 \% and test accuracy 86 \%. Table~\ref{tab:nn_network} shows the number of bits used for each parameter of the neural network.
+\begin{center}
+ \begin{tabular}{|c | c|} 
+ \hline
+  & number of bits \\ [0.5ex] 
+ \hline
+ CNN weights & 5 (6 for the first layer)\\ 
+ \hline
+ FC weights & 11 \\
+ \hline
+ Activations & 16  \\
+ \hline
+ Biases & 16 \\
+ \hline
+\end{tabular}
+	\label{tab:nn_network}
+\end{center}
+
+\section{Week 19}
+\subsection{Website content about \acs{AI}}
+As part of the official Enclustra newsletter and to leverage the new Mars ST3 \ac{AI} demonstrator, the 'Projects' section of the website was updated. The main purpose is to show that Enclustra also has some expertise on this new emerging field that is \ac{AI}. The website content was created together with the head of marketing of the company.
+\subsection{Embedded World demo discussion}
+The setup for the Embedded World demonstrator was also discussed. The whole setup of the demonstrator within the Enclustra booth had to be addressed: the position of the hand, the background, the position of the \ac{FPGA} and so on. Figure~\ref{fig:ew_booth} shows the final setup for the demonstrator.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=0.75\textwidth]{bilder/RPS_sketchup.png}
+		\caption{Embedded World demonstration setup}
+		\label{fig:ew_booth}
+\end{figure}
+This is just a sketch and subject to further change, but the general setup would look more or less like this. The monitor could be used to show a video feed with a virtual hand. This might be useful because the neural network and the image processing on the \ac{FPGA} are estimated to be much faster than the robot hand assuming its position, so a possibility to show the output of the neural network on the screen was added to the setup.
+\subsection{\acs{DNNDK} Tensorflow workflow}
+With the release of a new version of the \ac{DNNDK} support for Tensorflow was added. Tensorflow is the most popular \ac{ML} framework for training neural networks. It is developed by Google and provides a Python \ac{API} to simplify neural network training by providing optimized libraries to handle typical neural network operations. A Xilinx tutorial was also posted alongside the new release and with some modifications I managed to follow along. First of all I trained a convolutional neural network to recognize handwritten human digits using the standardized \ac{MNIST} data set. Then, the trained model was exported and could be fed into the \ac{DNNDK} tool chain to generate a fixed point 8 bit quantized neural network model ready for deployment on an \ac{FPGA}.
+
+\section{Week 20}
+\subsection{\acs{DNNDK} Tensorflow workflow}
+The second part of the tutorial consists of training a more sophisticated neural network capable of image recognition using the \ac{CIFAR}-10 data set. It contains 60.000 32x32 color images in 10 different classes. Compared to the \ac{MNIST} data set network it is much bigger and the training consequently takes a lot longer. The resulting trained weights and the network structure were again fed into the \ac{DNNDK} tool chain to obtain the necessary binary file that can be used in the Xilinx \ac{SDK} to create \ac{ML} applications.

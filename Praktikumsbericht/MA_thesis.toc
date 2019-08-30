@@ -2,7 +2,7 @@
 \babel@toc {english}{}
 \contentsline {chapter}{List of Figures}{I}{section*.4}% 
 \contentsline {chapter}{List of Tables}{III}{chapter*.5}% 
-\contentsline {chapter}{Abbreviations}{V}{chapter*.9}% 
+\contentsline {chapter}{Abbreviations}{V}{chapter*.10}% 
 \contentsline {chapter}{\numberline {1}Internship report}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Week 1}{1}{section.1.1}% 
 \contentsline {subsection}{\numberline {1.1.1}Company profile}{1}{subsection.1.1.1}% 
@@ -54,5 +54,16 @@
 \contentsline {subsection}{\numberline {1.16.1}Data set collection}{29}{subsection.1.16.1}% 
 \contentsline {subsection}{\numberline {1.16.2}Robot hand ordering}{30}{subsection.1.16.2}% 
 \contentsline {subsection}{\numberline {1.16.3}Internship documentation}{31}{subsection.1.16.3}% 
-\contentsline {chapter}{\nonumberline Bibliography}{33}{chapter*.45}% 
-\contentsline {chapter}{\numberline {A}Workday reports}{35}{appendix.A}% 
+\contentsline {section}{\numberline {1.17}Week 17}{31}{section.1.17}% 
+\contentsline {subsection}{\numberline {1.17.1}Robot hand ordering}{31}{subsection.1.17.1}% 
+\contentsline {subsection}{\numberline {1.17.2}Synthara update}{31}{subsection.1.17.2}% 
+\contentsline {subsection}{\numberline {1.17.3}Internship documentation}{32}{subsection.1.17.3}% 
+\contentsline {section}{\numberline {1.18}Week 18}{32}{section.1.18}% 
+\contentsline {subsection}{\numberline {1.18.1}Internship documentation}{32}{subsection.1.18.1}% 
+\contentsline {subsection}{\numberline {1.18.2}Synthara update}{33}{subsection.1.18.2}% 
+\contentsline {section}{\numberline {1.19}Week 19}{33}{section.1.19}% 
+\contentsline {subsection}{\numberline {1.19.1}Website content about \acs {AI}}{33}{subsection.1.19.1}% 
+\contentsline {subsection}{\numberline {1.19.2}Embedded World demo discussion}{33}{subsection.1.19.2}% 
+\contentsline {subsection}{\numberline {1.19.3}\acs {DNNDK} Tensorflow workflow}{34}{subsection.1.19.3}% 
+\contentsline {chapter}{\nonumberline Bibliography}{35}{chapter*.45}% 
+\contentsline {chapter}{\numberline {A}Workday reports}{37}{appendix.A}% 
