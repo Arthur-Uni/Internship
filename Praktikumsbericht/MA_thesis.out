@@ -1,0 +1,100 @@
+\BOOKMARK [0][-]{Front Page.0}{Front Page}{}% 1
+\BOOKMARK [0][-]{section*.7}{List of Figures}{}% 2
+\BOOKMARK [0][-]{chapter*.8}{List of Tables}{}% 3
+\BOOKMARK [0][-]{chapter*.10}{Abbreviations}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [0][-]{chapter.2}{Internship report}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Week 1}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.1.1}{Company profile}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.2}{Market research}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{Week 2}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{Out-of-box testing}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{Wiki updates and ZCU 104 testing}{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Week 3}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.3.1}{Presentation 'Introduction to AI'}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.2}{DNNDK testing on ZCU 104}{section.2.3}% 15
+\BOOKMARK [1][-]{section.2.4}{Week 4}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{Presentation 'Introduction to AI'}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.2}{Xilinx Vivado and DNNDK workflow}{section.2.4}% 18
+\BOOKMARK [1][-]{section.2.5}{Week 5}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.5.1}{Presentation 'Introduction to ML on FPGAs'}{section.2.5}% 20
+\BOOKMARK [2][-]{subsection.2.5.2}{Xilinx ML event Munich}{section.2.5}% 21
+\BOOKMARK [1][-]{section.2.6}{Week 6}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.6.1}{Xilinx ML event report}{section.2.6}% 23
+\BOOKMARK [2][-]{subsection.2.6.2}{Presentation 'Introduction to ML on FPGAs'}{section.2.6}% 24
+\BOOKMARK [2][-]{subsection.2.6.3}{Bugfix for ZCU 104 evaluation board}{section.2.6}% 25
+\BOOKMARK [2][-]{subsection.2.6.4}{Synthara collaboration}{section.2.6}% 26
+\BOOKMARK [1][-]{section.2.7}{Week 7}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.7.1}{Presentation 'Introduction to ML on FPGAs'}{section.2.7}% 28
+\BOOKMARK [2][-]{subsection.2.7.2}{Vivado hardware design and embedded OS}{section.2.7}% 29
+\BOOKMARK [1][-]{section.2.8}{Week 8}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.8.1}{Vivado hardware design and embedded OS}{section.2.8}% 31
+\BOOKMARK [2][-]{subsection.2.8.2}{Synthara collaboration conference call}{section.2.8}% 32
+\BOOKMARK [1][-]{section.2.9}{Week 9}{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.9.1}{Intel evaluation}{section.2.9}% 34
+\BOOKMARK [2][-]{subsection.2.9.2}{Petalinux workflow}{section.2.9}% 35
+\BOOKMARK [1][-]{section.2.10}{Week 10}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.10.1}{DNNDK update}{section.2.10}% 37
+\BOOKMARK [2][-]{subsection.2.10.2}{Petalinux workflow}{section.2.10}% 38
+\BOOKMARK [2][-]{subsection.2.10.3}{Enclustra hardware integration}{section.2.10}% 39
+\BOOKMARK [1][-]{section.2.11}{Week 11}{chapter.2}% 40
+\BOOKMARK [2][-]{subsection.2.11.1}{Enclustra hardware integration}{section.2.11}% 41
+\BOOKMARK [2][-]{subsection.2.11.2}{Petalinux build}{section.2.11}% 42
+\BOOKMARK [2][-]{subsection.2.11.3}{Synthara visit and collaboration discussion}{section.2.11}% 43
+\BOOKMARK [1][-]{section.2.12}{Week 12}{chapter.2}% 44
+\BOOKMARK [2][-]{subsection.2.12.1}{Mars ST3 demonstrator}{section.2.12}% 45
+\BOOKMARK [1][-]{section.2.13}{Week 13}{chapter.2}% 46
+\BOOKMARK [2][-]{subsection.2.13.1}{Mars ST3 demonstrator preparation}{section.2.13}% 47
+\BOOKMARK [2][-]{subsection.2.13.2}{ROCK-PAPER-SCISSOR demonstration data collection preparation}{section.2.13}% 48
+\BOOKMARK [1][-]{section.2.14}{Week 14}{chapter.2}% 49
+\BOOKMARK [2][-]{subsection.2.14.1}{ROCK-PAPER-SCISSOR demonstration data collection preparation}{section.2.14}% 50
+\BOOKMARK [2][-]{subsection.2.14.2}{Shell scripting and presentation on data set collection}{section.2.14}% 51
+\BOOKMARK [1][-]{section.2.15}{Week 15}{chapter.2}% 52
+\BOOKMARK [2][-]{subsection.2.15.1}{Data set collection}{section.2.15}% 53
+\BOOKMARK [2][-]{subsection.2.15.2}{Intel ML seminar in Lausanne}{section.2.15}% 54
+\BOOKMARK [1][-]{section.2.16}{Week 16}{chapter.2}% 55
+\BOOKMARK [2][-]{subsection.2.16.1}{Data set collection}{section.2.16}% 56
+\BOOKMARK [2][-]{subsection.2.16.2}{Robot hand ordering}{section.2.16}% 57
+\BOOKMARK [2][-]{subsection.2.16.3}{Internship documentation}{section.2.16}% 58
+\BOOKMARK [1][-]{section.2.17}{Week 17}{chapter.2}% 59
+\BOOKMARK [2][-]{subsection.2.17.1}{Robot hand ordering}{section.2.17}% 60
+\BOOKMARK [2][-]{subsection.2.17.2}{Synthara update}{section.2.17}% 61
+\BOOKMARK [2][-]{subsection.2.17.3}{Internship documentation}{section.2.17}% 62
+\BOOKMARK [1][-]{section.2.18}{Week 18}{chapter.2}% 63
+\BOOKMARK [2][-]{subsection.2.18.1}{Internship documentation}{section.2.18}% 64
+\BOOKMARK [2][-]{subsection.2.18.2}{Synthara update}{section.2.18}% 65
+\BOOKMARK [1][-]{section.2.19}{Week 19}{chapter.2}% 66
+\BOOKMARK [2][-]{subsection.2.19.1}{Website content about AI}{section.2.19}% 67
+\BOOKMARK [2][-]{subsection.2.19.2}{Embedded World demo discussion}{section.2.19}% 68
+\BOOKMARK [2][-]{subsection.2.19.3}{DNNDK Tensorflow workflow}{section.2.19}% 69
+\BOOKMARK [1][-]{section.2.20}{Week 20}{chapter.2}% 70
+\BOOKMARK [2][-]{subsection.2.20.1}{DNNDK Tensorflow workflow}{section.2.20}% 71
+\BOOKMARK [2][-]{subsection.2.20.2}{Data set publication}{section.2.20}% 72
+\BOOKMARK [2][-]{subsection.2.20.3}{Robot hand assembly}{section.2.20}% 73
+\BOOKMARK [2][-]{subsection.2.20.4}{Mettler Toledo AI demo interest}{section.2.20}% 74
+\BOOKMARK [1][-]{section.2.21}{Week 21}{chapter.2}% 75
+\BOOKMARK [2][-]{subsection.2.21.1}{Robot hand testing and documentation}{section.2.21}% 76
+\BOOKMARK [2][-]{subsection.2.21.2}{Mettler Toledo AI visit}{section.2.21}% 77
+\BOOKMARK [2][-]{subsection.2.21.3}{FPGA PWM VHDL module}{section.2.21}% 78
+\BOOKMARK [1][-]{section.2.22}{Week 22}{chapter.2}% 79
+\BOOKMARK [2][-]{subsection.2.22.1}{FPGA PWM VHDL module}{section.2.22}% 80
+\BOOKMARK [2][-]{subsection.2.22.2}{Synthara design porting}{section.2.22}% 81
+\BOOKMARK [2][-]{subsection.2.22.3}{Xilinx proprietary software trial}{section.2.22}% 82
+\BOOKMARK [1][-]{section.2.23}{Week 23}{chapter.2}% 83
+\BOOKMARK [2][-]{subsection.2.23.1}{Synthara design porting}{section.2.23}% 84
+\BOOKMARK [2][-]{subsection.2.23.2}{Mars XU3 alternative}{section.2.23}% 85
+\BOOKMARK [1][-]{section.2.24}{Week 24}{chapter.2}% 86
+\BOOKMARK [2][-]{subsection.2.24.1}{MIPI demonstrator Petalinux Mars ST3}{section.2.24}% 87
+\BOOKMARK [2][-]{subsection.2.24.2}{I2C debugging}{section.2.24}% 88
+\BOOKMARK [1][-]{section.2.25}{Week 25}{chapter.2}% 89
+\BOOKMARK [2][-]{subsection.2.25.1}{New DPU version}{section.2.25}% 90
+\BOOKMARK [2][-]{subsection.2.25.2}{ECC 2019 presentation}{section.2.25}% 91
+\BOOKMARK [1][-]{section.2.26}{Week 26}{chapter.2}% 92
+\BOOKMARK [2][-]{subsection.2.26.1}{ECC 2019 presentation}{section.2.26}% 93
+\BOOKMARK [2][-]{subsection.2.26.2}{Petalinux debug}{section.2.26}% 94
+\BOOKMARK [1][-]{section.2.27}{Week 27}{chapter.2}% 95
+\BOOKMARK [2][-]{subsection.2.27.1}{ECC 2019 presentation}{section.2.27}% 96
+\BOOKMARK [2][-]{subsection.2.27.2}{Mars ST3 demonstrator polishing}{section.2.27}% 97
+\BOOKMARK [2][-]{subsection.2.27.3}{Synthara design porting}{section.2.27}% 98
+\BOOKMARK [0][-]{chapter*.47}{Bibliography}{}% 99
+\BOOKMARK [0][-]{appendix.A}{Workday reports}{}% 100

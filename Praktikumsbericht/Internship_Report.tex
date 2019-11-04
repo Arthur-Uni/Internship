@@ -1,22 +1,22 @@
 \chapter{Internship report}
 \section{Week 1}
 \subsection{Company profile}
-The first two days of the week were spent getting to know all colleagues and familiarize myself with internal processes and guidelines. Zurich is the headquarters of Enclustra GmbH and therefore the majority of hardware and software design is being done here. Around forty people, most of which are hardware and software engineers, work in the Zurich office. The company itself is divided into two areas, \ac{FPGA} Design Center and \ac{FPGA} Solution Center.
-The former is offering customer-specific design services implementing applications on \acp{FPGA} and providing support and custom \ac{IP} components. Areas of expertise include wired networks and switching, wireless communications (\ac{SDR}), smart cameras, embedded interfaces (\ac{PCIe}, \ac{USB}, \ac{AXI}, ethernet, etc.), test and measurement (sensors, data acquisition, \ac{DSP}) and drive/motion control. 
-The latter designs custom \ac{FPGA}/\ac{SoC} modules and \ac{IP} solutions. Several base board families and \ac{FPGA} module families are developed and supported which can be adapted to the needs of the application by offering different performance key points. Reference designs for each combination of base board and module are provided as a starting point for customers.
+The first two days of the week were spent getting to know all colleagues and familiarize myself with internal processes and guidelines. Zurich office is the headquarters of Enclustra GmbH and therefore the majority of hardware and software design is being done here. Around fifty people, most of which are hardware and software engineers, work in the Zurich office. The company itself is divided into two areas, \ac{FPGA} Design Center and \ac{FPGA} Solution Center.
+The former is offering customer-specific design services implementing applications on \acp{FPGA} and providing support. Areas of expertise include wired networks and switching, wireless communications (\ac{SDR}), smart cameras, embedded interfaces (\ac{PCIe}, \ac{USB}, \ac{AXI}, ethernet, etc.), test and measurement (sensors, data acquisition, \ac{DSP}) and drive/motion control. 
+The FPGA Solution Center designs custom \ac{FPGA}/\ac{SoC} modules and custom \ac{IP} cores. Several baseboard families and \ac{FPGA} module families are developed and supported and can be adapted to the needs of the application by offering different performance key points. Reference designs for each combination of base board and module are provided as a starting point for customers.
 \subsection{Market research}
-Furthermore, my task was to do market research on artificial intelligence and artificial intelligence on \acp{FPGA} especially. The four key platforms for artificial neural network applications are shown in~\ref{fig:overview}.
+Furthermore, my task was to do market research on artificial intelligence and artificial intelligence on \acp{FPGA} especially. The four key platforms for artificial neural network applications are shown in figure~\ref{fig:overview}.
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=0.75\textwidth]{bilder/overview.png}
 		\caption{Hardware platform overview}
 		\label{fig:overview}
 \end{figure}
-A qualitative design trade-off is shown on the $x$- and $y$-axis in terms of power efficiency and performance versus flexibility and ease-of-use. As Enclustras focus is on the embedded market, the market survey has been mainly on \acp{GPU}, \acp{FPGA} and \acp{ASIC} as full blown \acp{CPU} are too inefficient for embedded applications. Possible competitors as well as toolkits provided by \ac{FPGA} manufacturers such as Intel, Xilinx and Lattice have been evaluated. The results have been presented in a meeting in which a discussion has been held, where Enclustras products and services can fit. One of the results was to start planning an \ac{AI} demonstrator using Enclustra hardware. The purpose of this demonstrator was to showcase machine learning applications running on Enclustra hardware. As a preliminary step it was decided to check the Xilinx \ac{DNNDK} samples on an evaluation board, the ZCU 104.
+A qualitative design trade-off is shown on the $x$- and $y$-axis in terms of power efficiency and performance versus flexibility and ease-of-use. As Enclustras focus is on the embedded market, the market survey has been mainly on \acp{GPU}, \acp{FPGA} and \acp{ASIC} as full blown \acp{CPU} are too inefficient for embedded applications. Possible competitors as well as toolkits provided by \ac{FPGA} manufacturers such as Intel, Xilinx and Lattice have been evaluated. The results have been presented in a meeting in which a discussion has been held, where Enclustras products and services can fit. One of the results was to start planning an \ac{AI} demonstrator using Enclustra hardware. The purpose of this demonstrator was to showcase machine learning applications running on Enclustra hardware. As a preliminary step it was decided to check the Xilinx \ac{DNNDK} on an evaluation board, the ZCU 104.
 
 \section{Week 2}
 \subsection{Out-of-box testing}
-At the beginning of the week a task unrelated to \ac{AI} was given to check upon internal documentation and customer support. Together with another recently hired employee, a day of out-of-box testing was scheduled. An Enclustra base board (Mercury+ PE1-400) together with a fitting \ac{FPGA} module (Mercury+ XU1) featuring a Xilinx \ac{MPSoC}.
+At the beginning of the week a task unrelated to \ac{AI} was given to check upon internal documentation and customer support. Together with another recently hired employee, a day of out-of-box testing was scheduled. An Enclustra base board (Mercury+ PE1-400) together with a fitting \ac{FPGA} module (Mercury+ XU1) featuring a Xilinx \ac{MPSoC} shuold be tested.
 Some details will be given for this specific \ac{FPGA} family as the Zynq-7000 \ac{SoC} and the Zynq-\ac{MPSoC} Xilinx product family are unique in the way dedicated ARM processors are combined with traditional \acp{FPGA}. A high level overview is shown in figure~\ref{fig:zynq-overview}.
 \begin{figure}[!htb]
 	\centering
@@ -24,26 +24,28 @@ Some details will be given for this specific \ac{FPGA} family as the Zynq-7000 \
 		\caption{High level ZYNQ family overview~\cite{zynq-book}}
 		\label{fig:zynq-overview}
 \end{figure}
-It shows the difference between traditional \acp{FPGA} and the Zynq product family. The main benefit here is the division between \ac{PS} and \ac{PL}. This allows to combine the benefits of traditional processing units with the flexibility of \acp{FPGA}. Custom logic and all peripheral devices can be implemented in the \ac{PL} part, while system control and even complete \acp{OS} (such as embedded Linux) can be done in the \ac{PS}. As this system is completely integrated in one package, the communication between the two fabrics is extremely fast and can be done using \ac{AXI} interfaces. The \ac{MPSoC} family even integrates several different types of processing units, \acp{APU}, \acp{GPU}, \acp{VPU} and \acp{RPU}.
-The Enclustra module uses an \ac{MPSoC} Xilinx FPGA and our task was to go through the whole process of bringing up the base board together with a corresponding module to test customer experience using the provided documentation, user manual and reference design. The goal was to find unclear instructions in the documentation and provide feedback as to the overall experience bringing up the hardware out-of-the-box. First, the hardware reference design was loaded in the Vivado Design Suite and the bit stream generated. After, the hardware description file was exported so it can be used using the Xilinx \ac{SDK}. This allows to create applications in C/C++ against the custom hardware design. All of the provided sample applications have been tested and verified. Some unclear instructions were identified and discussed with the employee in charge to improve customer experience.
+It shows the difference between traditional \acp{FPGA} and the Zynq product family. The main benefit here is the division between \ac{PS} and \ac{PL}. This allows to combine the benefits of traditional processing units with the flexibility of \acp{FPGA}. Custom logic and all peripheral devices can be implemented in the \ac{PL} part, while system control and even complete \acp{OS} (such as embedded Linux) can be done in the \ac{PS}. As this system is completely integrated in one package, the communication between the two fabrics is extremely fast and can be done using \ac{AXI} interfaces. The \ac{MPSoC} family even integrates several different types of processing units, \acp{APU}, \acp{GPU}, \acp{VPU} and \acp{RPU} as well as additional hard cores.
+The Enclustra module uses an \ac{MPSoC} Xilinx FPGA and our task was to go through the whole process of setting up the base board together with a corresponding module to test customer experience using the provided documentation, user manual and reference design. The goal was to find unclear instructions in the documentation and provide feedback as to the overall experience setting up the hardware out-of-the-box. First, the hardware reference design was loaded in the Vivado Design Suite and the bit stream generated. After, the hardware description file was exported so it can be used using the Xilinx \ac{SDK}. This allows to create applications in C/C++ against the custom hardware design. All of the provided sample applications have been tested and verified. Some unclear instructions were identified and discussed with the employee in charge to improve customer experience.
 \subsection{Wiki updates and ZCU 104 testing}
 The rest of the week was spend updating the internal Wiki page for \ac{AI}. Furthermore, the \ac{DNNDK} sample applications were tested on the ZCU 104 evaluation board. The provided examples include several state-of-the-art neural networks demonstrating key applications for neural network inference, such as image classification, face detection, object detection and pose detection. As only the image classification example worked directly for this particular evaluation a fix needed to be found. Another task was to introduce the topic of \ac{AI} to the whole company as \acp{ANN} was a completely new design field for a majority of the technical staff. Two PowerPoint presentations should be prepared, namely 'Introduction to \ac{AI}' and 'Introduction to \ac{ML} on \acp{FPGA}'. I started with the preparation of the first one in parallel with finding a bug fix for the other \ac{DNNDK} sample applications, as these should be part of the second presentation.
 
 \section{Week 3}
+\subsection{Presentation 'Introduction to \acs{AI}'}
 The main focus of this week was research and starting to layout the first presentation. It was assumed that the audience is technology savvy but has no particular background in \ac{AI}. Thus, the presentation had to introduce the whole field and key concepts that enabled the rise of \ac{AI} applications in recent years. The first draft of the presentation was discussed in a meeting and some changes were made to the overall structure, the content and the degree of complexity.The rough structure of the presentation is as follows:
 \begin{itemize}
 	\item \textbf{Motivation}: To get the viewers interest it was shown that \ac{AI} applications are already part of daily life for everyone. This was achieved by showing that all of the major companies such as Google, Apple, Facebook, Microsoft as well as Tesla, Netflix and Amazon use \ac{AI} in their datacenters and products and allocate huge resources to \ac{AI} research. The importance of \ac{AI} was further enhanced by showing the rapid growth of annually published \ac{AI} papers and startups developing \ac{AI} systems. The trend from 1995 to 2015 resembles almost exponential growth in \ac{AI} research and products.
 	\item \textbf{Definition}: As \ac{AI} has become such a buzz word in media a definition of the term was needed and what part of \ac{AI} is actually used in all of the common applications. \ac{ANN} that perform typical computer vision and language processing tasks are all part of \ac{ML}, which is a subset of \ac{AI}. \ac{ML} itself can then be divided into further subsets using roughly three learning methods, supervised learning, unsupervised learning and reinforcement learning. As supervised learning is the most commonly used method, the presentation focused on this method used to train \ac{ANN}. Furthermore, the different parts that comprise a \ac{ANN} are introduced, namely the neuron and how neurons are formed into layers. These layers are then stacked together to form an \ac{ANN}.
 	\item \textbf{Key concepts}: An explanation of supervised learning was given with two distinct examples, linear regression and deep learning neural networks to illustrate the idea behind supervised learning: predict a value $y$ given an input $x$ by deploying a function $f(x)$. This function $f(x)$ is acquired by deploying a learning algorithm and usage of a so called training set, consisting of input pairs $x$ and $y$. The concept of inference and training were also explained with an emphasis on inference. Once a network is trained, only inference needs to be run, so this is the crucial part application wise.
+	\item \textbf{Deep Learning}: Figure~\ref{fig:ilsvrc} shows the winners of the state-of-the-art ImageNet Large Scale Visual Recognition Challenge. It illustrates that the breakthrough in performance came not only from more sophisticated networks, but mainly from stacking different kinds of layers deeply, hence the name. The presentation was ended with the question, what hardware is best suited for \ac{ANN} applications. This question would be addressed in the second presentation 'Introduction to \ac{ML} on \acp{FPGA}'.
+\end{itemize}
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=\textwidth]{bilder/ilsvrc.png}
 		\caption{ILSVRC winners}
 		\label{fig:ilsvrc}
 \end{figure}
-	\item \textbf{Deep Learning}: Figure~\ref{fig:ilsvrc} shows the winners of the state-of-the-art ImageNet Large Scale Visual Recognition Challenge. It illustrates that the breakthrough in performance came not only from more sophisticated networks, but mainly from stacking different kinds of layers deeply, hence the name. The presentation was ended with the question, what hardware is best suited for \ac{ANN} applications. This question would be addressed in the second presentation 'Introduction to \ac{ML} on \acp{FPGA}'.
-\end{itemize}
-Alongside preparing the presentation the error preventing the more sophisticated examples was identified as the board crashed while performing tasks related to video analysis (face detection, pose detection, etc.). At first, it was suspected there were some problems with heat management and using the system monitor the temperature of the \ac{FPGA} was investigated during operation. As this seemed to be well within allowed borders specified by the Xilinx data sheet, other causes had to be found.
+\subsection{\ac{DNNDK} testing on ZCU 104}
+Alongside preparing the presentation the error preventing the more sophisticated \ac{DNNDK} examples from running was identified as the board crashed while performing tasks related to video analysis (face detection, pose detection, etc.). At first, it was suspected there were some problems with heat management and using the system monitor the temperature of the \ac{FPGA} was investigated during operation. As this seemed to be well within allowed borders specified by the Xilinx data sheet, other causes had to be found.
 
 \section{Week 4}
 \subsection{Presentation 'Introduction to \acs{AI}'}
@@ -54,23 +56,23 @@ The rest of the week was spent going through various tutorials provided by Xilin
 	\item \textbf{\ac{DNNDK} workflow}: Version 2.08 of the toolkit supported only the Caffe neural network training framework and needs a network description file and the trained weights as input. The key component here is the \ac{DPU} \ac{IP} core provided by the \ac{DNNDK} toolkit. This core is integrated via Vivado into the block design of the hardware and can be configured and adjusted for several performance and power profiles.
 	\item \textbf{\ac{DNNDK} \ac{SDSoC}}: Another option is to abstract away the whole Vivado block design process and use Xilinx \ac{SDSoC} to implement the whole system in a higher programming language, C++. Supported functions can then be flagged as being executed in the \ac{PL} part of the system. This approach makes using a traditional \ac{HDL} obsolete and is deemed more accessible. This approach uses the established Xilinx reVision stack for development providing high level \acp{API} for computer vision.
 \end{itemize}
-Furthermore, the \ac{IP} core provided by the \ac{DNNDK} toolkit was studied in more detail. A new base board was in the production state phase and the idea was to have a \ac{ML} design ready to showcase the capabilities of the new board.
+Furthermore, the \ac{IP} core provided by the \ac{DNNDK} toolkit was studied in more detail. A new Enclustra baseboard was in the final production phase and the idea was to have a \ac{ML} design ready to showcase the capabilities of the new board.
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=\textwidth]{bilder/DPU_example_design.png}
 		\caption{Example system with integrated \acs{DPU} \cite[p.~8]{dpu}}
 		\label{fig:dpu_example}
 \end{figure}
-Figure~\ref{fig:dpu_example} shows an example hardware design with integrated \ac{DPU} module. In this example a camera is connected via the \ac{MIPI} \ac{CSI2} interface to the \ac{PS}. \ac{DMA} is usually used in conjunction with an \ac{AXI} interconnect to communicate with the \ac{PS}. The captured images are used as the input to the neural network and the \ac{DPU} itself can be viewed as a co-processor to the \ac{PS} implemented in the \ac{PL} fabric. The \ac{IP} core itself is customizable and the number of \ac{DPU} processor units, the size of the \ac{DPU} and the usage of \ac{DSP} blocks among other parameters are configurable. The decision on which size to use is based upon the performance demands of the application.
+Figure~\ref{fig:dpu_example} shows an example hardware design with integrated \ac{DPU} module. In this example a camera is connected via the \ac{MIPI} \ac{CSI} interface to the \ac{PS}. \ac{DMA} is usually used in conjunction with an \ac{AXI} interconnect to communicate with the \ac{PS}. The captured images are used as the input to the neural network and the \ac{DPU} itself can be viewed as a co-processor to the \ac{PS} implemented in the \ac{PL} fabric. The \ac{IP} core itself is customizable and the number of \ac{DPU} processor units, the size of the \ac{DPU} and the usage of \ac{DSP} blocks among other parameters are configurable. The decision on which size to use is based upon the performance demands of the application.
 
 \section{Week 5}
 \subsection{Presentation 'Introduction to \ac{ML} on \acp{FPGA}'}
 In this week I started working on the second presentation 'Introduction to \ac{ML} on \acp{FPGA}'. This time the focus should be on the hardware needed to handle typical \ac{ML} workloads, namely inference and training along all major fields of applications where \ac{ANN} are used. The main areas are: image classification, object detection, semantic segmentation, optical character recognition and speech recognition. The presentation structure is as follows:
 \begin{itemize}
-	\item \textbf{\ac{ANN} workload:} Using a state-of-the-art neural network (resnet50) the number of operations per image were illustrated to show the vast amount of compute and memory needed for a single image. This was done for inference and training respectively with the purpose of driving home the challenges involved in \ac{ML} applications. Moreover, the majority of operations are costly \ac{MAC} operations which take several clock cycles to complete.
-	\item \textbf{Hardware for training:} The industry right now in terms of \ac{ANN} training is dominated by NVIDIA and so the clear answer here was \ac{GPU}. There are a number of start-ups developing alternative solutions to get into the \ac{ANN} training market. The main advantage these start-ups have is that they can design from scratch and use an architecture tailored to the specific requirements of \ac{ANN} training. The sheer number of floating point 32 operations and the requirements for memory are strictly not suited for \acp{FPGA}.
+	\item \textbf{\ac{ANN} workload:} Using a state-of-the-art neural network (resnet50) the number of operations needed to process one image in the \ac{ANN} were illustrated to show the vast amount of compute and memory needed for a single image. This was done for inference and training respectively with the purpose of laying out the challenges involved in \ac{ML} applications. Moreover, the majority of operations are the costly \ac{MAC} operations which take several clock cycles to complete.
+	\item \textbf{Hardware for training:} The industry right now in terms of \ac{ANN} training is dominated by NVIDIA and so the clear answer here was \ac{GPU}. There are a number of start-ups developing alternative solutions to get into the \ac{ANN} training market. The main advantage these start-ups have is that they can design hardware specifically tailored to \ac{ANN} workloads from scratch and use an architecture tailored to the specific requirements of \ac{ANN} training. The sheer number of floating point 32 operations and the requirements for memory are strictly not suited for \acp{FPGA}.
 	\item \textbf{Hardware for inference:} The picture is different for inference. Here, a lot of research has been done in using quantization and pruning of \ac{ANN} models without impeding the performance of these networks. The reason for this is, that neural networks are inherently over-parametrized and this is necessary for the training algorithms to work. Once a trained network is obtained however, the network can be compressed severely (up to 90 \%) without network degradation. A qualitative comparison of the available platforms was made to show the strengths and weaknesses of each platform. The flexibility of \acp{FPGA} make them a suitable platform for \ac{ANN} inference.
-	\item \textbf{\ac{FPGA} architecture:} Figure~\ref{fig:fpga_arch} shows the two possible high-level architectures that are typically used in neural network implementations. On the left you have the streaming architecture where basically the structure of the neural network is mirrored by the hardware implementation. The main benefit is the efficiency and customizability as the hardware can be tailored specifically to each network. The other approach is shown on the right. This is a more general approach in that it has a single computation engine which breaks down the operations needed for neural network inference. These operations are controlled by a host and executed on demand. The main benefit here is the flexibility. As the types of layers in a neural network are fixed, efficient implementation of these different types of layers enables the deployment of arbitrary neural networks. The downside is that the implementation is limited by the architecture in terms of tailoring the hardware implementation to the neural network.
+	\item \textbf{\ac{FPGA} architecture:} Figure~\ref{fig:fpga_arch} shows the two possible high-level architectures that are typically used in neural network implementations. On the left you have the streaming architecture where basically the structure of the neural network is mirrored by the hardware implementation. The main benefit is the efficiency and customizability as the hardware can be tailored specifically to each network. The other approach is shown on the right. This is a more general approach in that it has a single computation engine which breaks down the operations needed for neural network inference. These operations are controlled by a host and executed on demand. The main benefit here is the flexibility: I can use the same compute engine for different neuralk networks. As the types of layers in a neural network are fixed, efficient implementation of these different types of layers enables the deployment of arbitrary neural networks. The downside is that the implementation is limited by the architecture in terms of tailoring the hardware implementation to the neural network.
 	\begin{figure}[!htb]
 	\centering
 		\includegraphics[width=\textwidth]{bilder/FPGA_arch.png}
@@ -89,7 +91,7 @@ Three main tasks were worked upon in this week, namely preparing the second pres
 \subsection{Presentation 'Introduction to \ac{ML} on \acp{FPGA}'}
 Extensive market research has been conducted to find resources and ideas on how to present the different hardware platforms. The difficulty lies therein, that there are no standardized performance metrics for neural networks. Performance is strongly dependent on the network used and the individual use case. This leads to a lot of unfair comparisons, both in research and industry when numbers are shown. Therefore, a qualitative approach was chosen as doing all of these comparisons would have taken an extreme amount of work time and effort, requiring special hardware as well.
 \subsection{Bugfix for ZCU 104 evaluation board}
-After reading through a vast amount of documentation and employing the help of online resources, mainly the Xilinx official forums, a solution was found to the problem. It turned out to be a specific problem of the ZCU 104 evaluation board which made it hard to track down. The solution to this was provided by an unofficial patch by on e of the Xilinx employees online. The board has power issues when running at full load resulting in the already mentioned problem of freezing the board in the middle of running the sample applications. After applying the patch all of the sample applications worked. These included image classification with resnet50 and inception-v1 as well as real time face detection, object detection and pose detection using other popular \ac{ANN}
+After reading through a vast amount of documentation and employing the help of online resources, mainly the Xilinx official forums, a solution was found to the problem. It turned out to be a specific problem of the ZCU 104 evaluation board which made it hard to track down. The solution to this was provided by an unofficial patch by on e of the Xilinx employees online. The board has power issues when running at full load resulting in the already mentioned problem of freezing the board in the middle of running the sample applications. After applying the patch all of the sample applications worked. The patch changed a current setting on the board. These included image classification with resnet50 and inception-v1 as well as real time face detection, object detection and pose detection using other popular \ac{ANN}
 \subsection{Synthara collaboration}
 During research for neural network accelerator implementations I read about an ETH start-up providing this service in the form of an \ac{ASIC}. However, their prototypes as a proof-of-concept are implemented on \acp{FPGA}. Thus, we reached out to them and scheduled a meeting. During this meeting we discussed the possibility of a cooperation. The idea was to implement a demonstrator for the Embedded World 2020 conference showing off Enclustra hardware and using the Synthara neural network accelerator. The demo is a game of rock-paper-scissors played by a human player against a robotic hand. The setup can be seen in figure~\ref{fig:demonstrator}. The robot hand is controlled via \ac{USB} using \ac{PWM} to control each finger individually. The human players movement is captured by a camera connected via \ac{MIPI} to the \ac{FPGA} board. The \ac{FPGA} handles all image preprocessing and is running a custom neural network capable of detecting hand gestures. The control signals for the robot hand are also given by the FPGA.
 	\begin{figure}[!htb]
@@ -110,12 +112,12 @@ The rest of the week was spent doing in depth research on integrating \ac{MIPI} 
 		\caption{D-PHY \acs{MIPI} \acs{IP} core overview~\cite{mipi-dphy}}
 		\label{fig:mipi_dphy}
 \end{figure}
-A high-level view of the Xilinx \ac{MIPI} D-PHY \ac{IP} core system is shown in figure~\ref{fig:mipi_dphy}. The communication takes place between a Master and Slave with one clock lane and up to 4 data lanes. This \ac{IP} core allows proper communication on this high-speed I/O interface standard. The complete receiver subsystem is shown in figure~\ref{MIPI_rx}.
+A high-level view of the Xilinx \ac{MIPI} D-PHY \ac{IP} core system is shown in figure~\ref{fig:mipi_dphy}. The communication takes place between a Master and Slave with one clock lane and up to 4 data lanes. This \ac{IP} core allows proper communication on this high-speed I/O interface standard. The complete receiver subsystem is shown in figure~\ref{fig:MIPI_rx}.
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=\textwidth]{bilder/MIPI_rx.png}
 		\caption{Receiver \acs{MIPI} \acs{IP} core subsystem~\cite{mipi-rx}}
-		\label{fig:mipi_dphy}
+		\label{fig:MIPI_rx}
 \end{figure}
 The D-PHY \ac{IP} core is part of this subsystem and in combination with the rest of the Rx subsystem allows the integration of a \ac{MIPI} based image sensor and an image sensor pipe. The captured images can then be accessed via \ac{AXI} interfaces. This part of the system needed to be integrated into the complete hardware design in Vivado consisting of the ZYNQ \ac{MPSoC}, the \ac{DPU} \ac{IP} core and the usual peripheral interfaces (\ac{USB}, DisplayPort, HDMI, etc.). On top of that, an embedded Linux \ac{OS} needed to be built to control the applications and provide a working demonstration environment. The chosen Linux distribution for this task was the Xilinx supported Petalinux, which is itself based on Yocto.
 
@@ -141,7 +143,7 @@ Another Synthara conference call was due to further discuss details about the Em
 
 \section{Week 9}
 \subsection{Intel evaluation}
-In this week a more closer evaluation of available neural network inference tools by Intel was done. The reason for this is the dependency solely on one \ac{FPGA} supplier is not ideal. In order to be flexible with product design and familiarity with all of the tools on the market for neural network inference, it was decided that some time should be spend on evaluating alternatives to Xilinx.
+In this week a more closer evaluation of available neural network inference tools by Intel was done. The reason for this is that the dependency solely on one \ac{FPGA} supplier is not ideal. In order to be flexible with product design and familiar with all of the tools on the market for neural network inference, it was decided that some time should be spend on evaluating alternatives to Xilinx.
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=\textwidth]{bilder/openVINO-overview.png}
@@ -154,14 +156,14 @@ Integration and building of a custom Petalinux distribution continued this week 
 
 \section{Week 10}
 \subsection{\acs{DNNDK} update}
-In this week some further testing of the new \ac{DNNDK} version was done. The biggest change here is the added support for the Tensorflow framework. Tensorflow is the most popular neural network training framework right now as figure~\ref{fig:nnframeworks} shows. The x-axis represents the timeline and the y-axis is the percentage of frameworks mentioned in \ac{ML} publications.
+In this week some further testing of the new \ac{DNNDK} version was done. The biggest change here is the added support for the Tensorflow framework. Tensorflow is the most popular neural network training framework right now as figure~\ref{fig:nnframeworks} shows. The x-axis represents the timeline and the y-axis is the percentage of papers mentioning a specific neural network framework.
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=\textwidth]{bilder/nnframeworks.jpg}
 		\caption{Neural network framework usage overview \cite{frameworks}}
 		\label{fig:nnframeworks}
 \end{figure}
-Although the output formats of Tensorflow are different than the Caffe output files, the work flow with the \ac{DNNDK} is basically the same as before: take the output of the framework, typically the trained weights and the network structure and feed it to the \ac{DNNDK} tools. Another big change is the separation between each of the tools provided by the \ac{DNNDK} package.
+Although the output formats of Tensorflow are different than the Caffe output files, the work flow with the \ac{DNNDK} is basically the same as before: take the output of the framework, typically the trained weights and the network structure and feed it to the \ac{DNNDK} tools. Another big change is the division of the \ac{DNNDK} into sub groups.
 \begin{itemize}
 	\item \textbf{\ac{IP} core:} \ac{DPU} \ac{IP} core to be integrated in hardware design
 	\item \textbf{\ac{DNNDK} tools:} quantization and compression tools to acquire a binary file encapsulating the trained neural network model
@@ -169,14 +171,14 @@ Although the output formats of Tensorflow are different than the Caffe output fi
 	\begin{figure}[!htb]
 		\centering
 			\includegraphics[width=\textwidth]{bilder/ai_sdk.png}
-			\caption{\ac{AI} \ac{SDK} overview \cite{ai_sdk}}
+			\caption{\acs{AI} \acs{SDK} overview \cite{ai_sdk}}
 			\label{fig:ai_sdk}
 	\end{figure}
 \end{itemize}
 \subsection{Petalinux workflow}
 The Petalinux documentation was studied as well, especially setting up the device tree correctly. The device tree is a description of the hardware components that are present in a computer system so that the kernel can access these hardware components correctly. Part of this process is automated by the Petalinux tools, however, there are also manual additions that need to be added for the system to work as intended.
 \subsection{Enclustra hardware integration}
-After successfully integrating the \ac{DPU} \ac{IP} core into the ZCU 104 evaluation board the implementation of the \ac{DPU} on Enclustra modules was undertaken. Two different modules were chosen from the companies portfolio. One lower end ZYNQ Ultrascale device, the Mars XU3 and a higher end module, the Mercury+ XU1. The main difference concerning \ac{ML} performance is the number of \ac{DSP} blocks on the \acp{FPGA}. The \ac{DPU} can be instantiated in different sizes, the bigger the size the more performance. This is strongly dependent on the number of \ac{DSP} blocks that can be used. A comparison was made which sizes can be synthesized on these two modules. The much bigger Mercury+ XU1 can fit any of the available \ac{DPU} sizes (and has enough room for several instances of the \ac{DPU} \ac{IP} core) whereas the smaller Mars XU3 can only fit small \ac{DPU} sizes.
+After successfully integrating the \ac{DPU} \ac{IP} core into the ZCU 104 evaluation board the implementation of the \ac{DPU} on Enclustra modules was undertaken. Two different modules were chosen from the companies portfolio. One lower end ZYNQ Ultrascale device featured on the Mars XU3 and a higher end module, the Mercury+ XU1. The main difference concerning \ac{ML} performance is the number of \ac{DSP} blocks on the \acp{FPGA}. The \ac{DPU} can be instantiated in different sizes, the bigger the size the more performance. This is strongly dependent on the number of \ac{DSP} blocks that can be used. A comparison was made which sizes can be synthesized on these two modules. The much bigger Mercury+ XU1 can fit any of the available \ac{DPU} sizes (and has enough room for several instances of the \ac{DPU} \ac{IP} core) whereas the smaller Mars XU3 can only fit small \ac{DPU} sizes.
 
 \section{Week 11}
 \subsection{Enclustra hardware integration}
@@ -205,7 +207,7 @@ This week the first samples of the Mars ST3 base board were available at the com
 The main difficulty was posed by the Petalinux implementation as there are no official guidelines by Xilinx for custom boards. However, the official Xilinx tutorial found at \href{https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration}{https://github.com/Xilinx/Edge-AI-Platform-Tutorials/tree/master/docs/DPU-Integration} provides an excellent starting point for custom projects. After a few adjustments to the device tree specific to the Enclustra hardware and Petalinux configuration adjustments for the exported .hdf file, the resnet50 image classification application was successfully running on the Enclustra hardware. The setup is shown in figure~\ref{fig:st3_demo_resnet}.
 \begin{figure}[!htb]
 	\centering
-		\includegraphics[width=\textwidth]{bilder/placeholder.png}
+		\includegraphics[width=\textwidth]{bilder/resnet_overview.jpg}
 		\caption{resnet50 demonstrator overview}
 		\label{fig:st3_demo_resnet}
 \end{figure}
@@ -213,7 +215,7 @@ This first version of the demonstrator consists of a \ac{DP} monitor, the Mars S
 A toggle button was implemented to allow switching between two modes, going through the data set one by one or classifying all images in the data set as fast as possible. One mode is to show the correct result of the classification as otherwise the classification is too fast to observe by eye. The other mode is to show the classification speed. An example for this can be seen in figure~\ref{fig:resnet_classification}.
 \begin{figure}[!htb]
 	\centering
-		\includegraphics[width=\textwidth]{bilder/placeholder.png}
+		\includegraphics[width=\textwidth]{bilder/resnet50_example.jpg}
 		\caption{resnet50 classification example}
 		\label{fig:resnet_classification}
 \end{figure}
@@ -244,7 +246,7 @@ To automatize this process, a shell script was written handling all of the tasks
 The test setup was build up in the kitchen area, so as to get as many people as possible to contribute to the data set collection. In order to have everybody know what to do, a short presentation was prepared to inform the colleagues of the purpose of this data set collection and also the procedure. Details were given about what constitutes a quality data set and how to obtain it. Emphasis was laid upon how to move the subjects hand and arm in order to generate useful data. Emphasis was laid on not moving the hand out of the camera frame, as this would generate a lot of falsely labeled data, which in turn degrades the network performance during training significantly. A diagram of the data collection setup is shown in figure~\ref{fig:setup}.
 \begin{figure}[!htb]
 	\centering
-		\includegraphics[width=\textwidth]{bilder/placeholder.png}
+		\includegraphics[width=0.5\textwidth]{bilder/collection_setup.png}
 		\caption{Data set collection setup}
 		\label{fig:setup}
 \end{figure}
@@ -253,19 +255,19 @@ The test setup was build up in the kitchen area, so as to get as many people as 
 \subsection{Data set collection}
 The majority of this week was spent collecting the data set. Therefore, the data collection setup was build up in the kitchen area and various employees were asked to participate. I went from one to the after I was done with one subject. A total of 10 minutes per subject of data was captured via video. As mentioned before, a Raspberry Pi was used with the script I created to collect the data and automatize as much of the process as possible. During the data set collection I assisted in keeping the movements of the subject in check and talk them through the collection process. For each of the symbols (ROCK, PAPER, SCISSORS, ILLEGAL) a video of 150 seconds was recorded. After each symbol, a short break was incorporated, as this seemingly small time period already puts a strain on the arm. This process was repeated for any employee that was available. A monitor was used to directly show the camera video feed so that the position of the hand within the frame was visible and could be easily corrected.
 \subsection{Intel \acs{ML} seminar in Lausanne}
-On Wednesday, I traveled to Lausanne to attend an Intel seminar on \ac{AI} inference with Intel products. The main reason for going to this event was to acquire more knowledge of the OpenVINO toolkit for \ac{FPGA}. In addition, a block of the seminar dealt with data set preparation and augmentation for training neural networks. One of the key methods to create the necessary amount of data is data augmentation. This can be described as oversampling the data set, basically creating more data from existing data by rotating, shifting, zooming and other image manipulations. In this way, the data set can be evenly balanced as well so that each class has a similar amount of images. The data set is then separated into three subsets:
+On Wednesday, I traveled to Lausanne to attend an Intel seminar on \ac{AI} inference with Intel products. The main reason for going to this event was to acquire more knowledge of the OpenVINO toolkit for \ac{FPGA}. In addition, a block of the seminar dealt with data set preparation and augmentation for training neural networks. One of the key methods to create the necessary amount of data is data augmentation. This can be described as oversampling the data set, basically creating more data from existing data by rotating, shifting, zooming and other image manipulations. In this way, the data set can be evenly balanced as well so that each class has a similar amount of images. The data set is then separated into three subsets, which are shown in figure~\ref{fig:segmentation}.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=0.6\textwidth]{bilder/data_set.png}
+		\caption{Data set segmentation}
+		\label{fig:segmentation}
+\end{figure}
 \begin{itemize}
 	\item training set: data used to train the network
 	\item validation set: subset of the test set used for hyperparameter tuning (learning rate, momentum, etc.)
 	\item test set: data that the network has not seen during training, which is used for a full evaluation of the performance of the network
 \end{itemize}
 The data augmentation process only applies to the training set. As to new information regarding the OpenVINO toolkit, there was no additional information given as to what is available online. Overall, the focus was not on \ac{FPGA} programming. The main idea of Intel is to provide a unified platform to develop \ac{AI} applications using OpenCL and then provide plugins to optimize the device independent code for the individual hardware, like \acp{FPGA}.
-\begin{figure}[!htb]
-	\centering
-		\includegraphics[width=\textwidth]{bilder/placeholder.png}
-		\caption{Something}
-		\label{fig:something}
-\end{figure}
 The rest of the week was spent collecting more data from Enclustra employees with the created data collection setup.
 
 \section{Week 16}
@@ -299,7 +301,7 @@ The rest of the week was spent on writing documentation of all of the tasks I co
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[width=0.75\textwidth]{bilder/ST3_demonstrator.jpg}
-		\caption{Mars ST3 \ac{DNNDK} demonstrator}
+		\caption{Mars ST3 \acs{DNNDK} demonstrator}
 		\label{fig:st3_demonstrator}
 \end{figure}
 
@@ -342,4 +344,114 @@ With the release of a new version of the \ac{DNNDK} support for Tensorflow was a
 
 \section{Week 20}
 \subsection{\acs{DNNDK} Tensorflow workflow}
-The second part of the tutorial consists of training a more sophisticated neural network capable of image recognition using the \ac{CIFAR}-10 data set. It contains 60.000 32x32 color images in 10 different classes. Compared to the \ac{MNIST} data set network it is much bigger and the training consequently takes a lot longer. The resulting trained weights and the network structure were again fed into the \ac{DNNDK} tool chain to obtain the necessary binary file that can be used in the Xilinx \ac{SDK} to create \ac{ML} applications.
+The second part of the tutorial consists of training a more sophisticated neural network capable of image recognition using the \ac{CIFAR}-10 data set. It contains 60.000 32x32 color images in 10 different classes. Figure~\ref{fig:cifar} shows these 10 different classes and exmaples for each class. Compared to the \ac{MNIST} data set network it is much bigger and the training consequently takes a lot longer. The resulting trained weights and the network structure were again fed into the \ac{DNNDK} tool chain to obtain the necessary binary file that can be used in the Xilinx \ac{SDK} to create \ac{ML} applications. The neural network specific tasks can be off-handed to the \ac{DPU} \ac{IP} core. A documentation for the internal Wiki page of Enclustra was added and the small adjustments to the original Xilinx tutorial documented.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/cifar.jpg}
+		\caption{\acs{CIFAR}-10 data set example}
+		\label{fig:cifar}
+\end{figure}
+\subsection{Data set publication}
+In order to show Enclustras interest in \ac{ANN} the decision was made to publish the collected Rock-Paper-Scissors data set on the Kaggle website. Kaggle offers a community and platform dedicated to neural network research. Various data sets are available for free to advocate and challenge neural network research. A detailed description was written containing the amount of data collected as well as the method of collection.
+\subsection{Robot hand assembly}
+The robot hand arrived in this week and needed to be assembled. As the description and all of the instructions were in Chinese, this took longer than anticipated. Moreover, the data was only available via Baidu which made acquisition difficult because a Chinese phone number is needed to make a Baidu account. Fortunately, Enclustra also has an office in Shenzhen and I asked a Chinese employee there to download all of the files and make them available to me.
+\subsection{Mettler Toledo \ac{AI} demo interest}
+During my internship Enclustra celebrated its 15th anniversary and during that visit, a Mettler Toledo official showed interest in the Mars ST3 \ac{AI} demonstrator. The Mars ST3 demonstrator was handed over to Mettler Toledo so they could present it within their company. A visit for next week was also arranged.
+
+\section{Week 21}
+\subsection{Robot hand testing and documentation}
+After the robot hand was assembled I tested the functionality with the included Arduino microcontroller. The servo motors controlling the fingers of the robot hand and the palm are using \ac{PWM} to move the fingers. The pulse width of the modulation scheme corresponds to the degree the motor has to rotate to. The pulse width is controlled by the Arduino in this case.
+\subsection{Mettler Toledo \ac{AI} visit}
+As mentioned before I visited Mettler Toledo with my supervisor Jelena to showcase our \ac{AI} demonstrator. We discussed possible scenarios where \ac{AI} could be interesting for a customer. The main focus of Mettler Toledo is industrial scales and measurement equipment. Image recognition in this case could be a prime use case for \ac{ANN}.
+\subsection{\acs{FPGA} \acs{PWM} VHDL module}
+In order to get rid of the Arduino, the \ac{PWM} scheme needed to be created on the \ac{FPGA}. A VHDL module was written to make the Arduino obsolete.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/pwm_modelsim.png}
+		\caption{\acs{PWM} module}
+		\label{fig:modelsim}
+\end{figure}
+The function of the VHDL module is shown in figure~\ref{fig:modelsim}. The $duty cycle$ is given and $pwm out$ is generated. This is done by using two counters, one of which is used to divide the system clock and generate a slower pulse ($clk div$). This slower pulse is used to increase the second counter. In this way, $pwm out$ can be generated with a condititonal statement depending on the state of the second counter.
+
+\section{Week 22}
+\subsection{\acs{FPGA} \acs{PWM} VHDL module}
+Further work was put into the \ac{PWM} module. After writing synthesizable and syntax error free code, a testbench was written for the \ac{PWM} module.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=0.5\textwidth]{bilder/testbench.png}
+		\caption{Hardware design language testbench overview}
+		\label{fig:testbench}
+\end{figure}
+Figure~\ref{fig:testbench} shows the structure of a VHDL module testbench. A testbench is a VHDL entity without inputs or outputs. The \ac{DUT} is instantiated as a component within the testbench and stimuli are provided as signals to the inputs of the \ac{DUT}. By observing the outputs, the functionality of the design can be verified in simulation. Modelsim was used as the tool for testing and debugging the \ac{PWM} module.
+\subsection{Synthara design porting}
+I received the synthesized netlist from Synthara containing their \ac{IP} core and started to incorporate their module into the \ac{MIPI} design.
+\subsection{Xilinx proprietary software trial}
+Enclustra as a close Xilinx partner could register for early access to a new unified design software. Any further information is part of a non disclosure agreement and I can not go into further detail in my report.
+
+\section{Week 23}
+\subsection{Synthara design porting}
+The Synthara \ac{IP} core was implemented into the \ac{MIPI} hardware design. However, the design could not be fit on the \ac{FPGA} because the Mars XU3 \ac{FPGA} has a low LUT and DSP count in comparison to other Ultrascale+ architectures. The design was synthesized successfully after the block design was created in Vivado. After discussing this issue with Synthara the possibility of getting a smaller version of the accelerator from Synthara was investigated.
+\subsection{Mars XU3 alternative}
+If it would not be possible to use the Mars XU3 an alternative solution was investigated. The Mercury XU1+ features a much bigger \ac{FPGA} and was chosen as a possible alternative.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/MPSoC_product_guide.png}
+		\caption{Xilinx \acs{MPSoC} product overview \cite{mpsoc}}
+		\label{fig:mpsoc_overview}
+\end{figure}
+Figure~\ref{fig:mpsoc_overview} shows the difference between the two \acp{FPGA} used in the Mars XU3 and the Mercury XU1+. The unaltered Synthara design fits easily on the Mercury XU1+ module. One downside of this adjustment would be the usage of the Mercury+ PE1 which does not have a \ac{MIPI} port. In this case we would use the USB 3.0 camera for the camera feed. This would mean recollecting part of the data set with the USB 3.0 camera, so this was put on hold for now and I waited for Synthara to reduce the size of their accelerator. This would allow the usage of the intended Mars XU3 module.
+
+\section{Week 24}
+\subsection{\acs{MIPI} demonstrator Petalinux Mars ST3}
+During the wait for Synthara to adjust the accelerator \ac{IP} core the demonstrator for the Mars ST3 board was adjusted to use the \ac{MIPI} camera. For this task, adjustments to the Petalinux system needed to be made. The device tree as well as the Linux driver needed to be modified and added respectively. The camera driver for the Sony sensor used in the Raspberry Pi camera is controlled via the I2C protocol. I2C is a simple master-slave interface for data communication. It uses only two wires, SCL (Serial Clock Line) and SDA (Serial Data).
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/I2C.png}
+		\caption{I2C protocol data transfer}
+		\label{fig:i2c}
+\end{figure}
+The normal state is defined by both lines being high. The master initiates the communication by generating the start condition $S$ followed by the slaved device address ($B1$). Read or write is defined by the $0$ bit of the slave address where $0$ means ´write´. Once all bytes are read or written ($B_N$) the stop condition ($P$) is generated. This signals the end of the communication transaction.
+\subsection{I2C debugging}
+Two problems occurred during testing the camera driver and the camera itself. The first one is a hardware specific problem of the first revision of the Mars ST3 board where the \ac{MIPI} connector pins are not configured in a standard way and the need to be adjusted. The I2C device also needed to be included in the device tree. After these adjustments, the driver could be loaded successfully on the board. The second problem is that the test application for the testing the camera feed gets stuck at preparing the data transfer.
+
+\section{Week 25}
+\subsection{New \ac{DPU} version}
+Xilinx released a new version of the \ac{DPU} \ac{IP} core showing much better performance. In this week I started to adjust the original \ac{AI} demonstrator in order to use the new, more powerful version.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/dpu_performance.png}
+		\caption{\acs{DPU} performance overview \cite{dpu}}
+		\label{fig:dpu_performance}
+\end{figure}
+Figure~\ref{fig:dpu_performance} shows the achievable performance for different image classification and object detection state-of-the-art neural networks. The workload as well as the input image resolution is shown together with the framerate that is acquired.
+The hardware design and Petalinux needed to be adjusted for the new \ac{DNNDK} version. Previously, the softmax function needed to be calculated in the \ac{CPU}, whereas now, this can also be handled by the \ac{DPU}. It is up to 160 times faster to calculate the softmax in hardware than it is in software.
+\subsection{ECC 2019 presentation}
+Enclustra is a sponsor of the Electronic Computing Conference in Winterthur, which is one of the biggest embedded computing conferences in Switzerland. I was tasked with presenting the possibilities of \ac{AI} on \acp{FPGA}. I started putting together a presentation with a brief company profile, going to introducing artificial neural networks and ultimately focusing on \acp{FPGA} as a viable platform for neural network inference.
+
+\section{Week 26}
+\subsection{ECC 2019 presentation}
+I continued working on the presentation for the ECC 2019. A section about available hardware platforms and their strengths and weaknesses in terms of neural network inference was added. This comparison could only be done in a qualitative manner as there is no standardized test for neural network workloads and thus making a quantitatively fair comparison is very difficult.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/hardware_comp.png}
+		\caption{Qualitative comparison of available hardware platforms}
+		\label{fig:hardware_comp}
+\end{figure}
+Figure~\ref{fig:hardware_comp} shows a qualitative hardware comparison for the three major hardware platforms for running neural network inference in embedded devices. This qualitative study was conducted by looking at research papers as well as industry white papers and product pages. The main advantage of \acp{FPGA} is the flexibility of the devices. Low latency in conjunction with sensor integration and a high performance per Watt. 
+\subsection{Petalinux debug}
+In order to get the new version of the \ac{DPU} running on the Mars ST3 the hardware design in conjunction with the Petalinux device tree. The softmax integration also added another interrupt to the system which needed to be in sync with the device tree. After rebuilding the Petalinux system the two demos also needed to be adjusted to the new \ac{API} \ac{DNNDK} version.
+
+\section{Week 27}
+\subsection{ECC 2019 presentation}
+The presentation deadline was this week and the ECC itself was to take place in the first week of September. I polished the presentation and discussed possible improvements with my supervisor. A test run to check the amount of time needed for the presentation was also held in front of my supervisor. The feedback was incorporated into the presentation slides. The final structure is as follows: company presentation, neural networks and neural network training, inference requirements, available hardware platforms, \ac{FPGA} workflow and Xilinx \ac{DNNDK} workflow in detail. In total, the presentation would be 20 minutes and 10 minutes are reserved for questions.
+\subsection{Mars ST3 demonstrator polishing}
+The previous version of the Mars ST3 \ac{DNNDK} demonstrator was updated with the newer version. The main benefit is better performance and smoother operation. It was planned to use the demonstrator at the Enclustra booth at the ECC. This fits the topic of the presentation as well as it shows Enclustras interest and expertise in \ac{AI}.
+\subsection{Synthara design porting}
+Synthara managed to provide a smaller version of their neural network accelerator core. I incorporated this new version into the \ac{MIPI} design and now Vivado successfully fit the whole design on the Mars XU3 module.
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[width=\textwidth]{bilder/design_usage.png}
+		\caption{Vivado usage report Rock-Paper-Scissor demonstrator}
+		\label{fig:usage}
+\end{figure}
+Figure~\ref{fig:usage} shows the usage report of the available hardware resources on the used \ac{FPGA} after the place and route step. The design barely fits the \ac{FPGA} with a 98 \% usage of the available LUTs. The reason why the \ac{DSP} block count usage is so low is that Syntharas \ac{IP} core is not optimized for \acp{FPGA}. So there is definitely some potential for improving the design when running on \acp{FPGA}.

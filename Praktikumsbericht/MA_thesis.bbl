@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.0 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -132,13 +132,40 @@
     \field{sortinithash}{X}
     \field{title}{DPU for Convolutional Neural Network v1.2}
     \verb{url}
-    \verb https://www.xilinx.com/support/documentation/ip_documentation/dpu/v1_
-    \verb 2/pg338-dpu.pdf
+    \verb https://www.xilinx.com/support/documentation/ip_documentation/dpu/v3_
+    \verb 0/pg338-dpu.pdf
     \endverb
     \field{day}{26}
     \field{month}{03}
     \field{year}{2019}
     \warn{\item Can't use 'date' + 'year'}
+  \endentry
+
+  \entry{mpsoc}{online}{}
+    \name{author}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{X1}
+    \strng{fullhash}{X1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{title}{MPSoC product guide}
+    \verb{url}
+    \verb https://www.xilinx.com/support/documentation/selection-guides/zynq-ul
+    \verb trascale-plus-product-selection-guide.pdf
+    \endverb
+    \field{year}{2016}
   \endentry
 
   \entry{mipi-dphy}{online}{}

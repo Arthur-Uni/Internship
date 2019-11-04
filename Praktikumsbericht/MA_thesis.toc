@@ -1,69 +1,101 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
-\contentsline {chapter}{List of Figures}{I}{section*.4}% 
-\contentsline {chapter}{List of Tables}{III}{chapter*.5}% 
-\contentsline {chapter}{Abbreviations}{V}{chapter*.10}% 
-\contentsline {chapter}{\numberline {1}Internship report}{1}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Week 1}{1}{section.1.1}% 
-\contentsline {subsection}{\numberline {1.1.1}Company profile}{1}{subsection.1.1.1}% 
-\contentsline {subsection}{\numberline {1.1.2}Market research}{1}{subsection.1.1.2}% 
-\contentsline {section}{\numberline {1.2}Week 2}{2}{section.1.2}% 
-\contentsline {subsection}{\numberline {1.2.1}Out-of-box testing}{2}{subsection.1.2.1}% 
-\contentsline {subsection}{\numberline {1.2.2}Wiki updates and ZCU 104 testing}{4}{subsection.1.2.2}% 
-\contentsline {section}{\numberline {1.3}Week 3}{4}{section.1.3}% 
-\contentsline {section}{\numberline {1.4}Week 4}{6}{section.1.4}% 
-\contentsline {subsection}{\numberline {1.4.1}Presentation 'Introduction to \acs {AI}'}{6}{subsection.1.4.1}% 
-\contentsline {subsection}{\numberline {1.4.2}Xilinx Vivado and \acs {DNNDK} workflow}{6}{subsection.1.4.2}% 
-\contentsline {section}{\numberline {1.5}Week 5}{8}{section.1.5}% 
-\contentsline {subsection}{\numberline {1.5.1}Presentation 'Introduction to \ac {ML} on \acp {FPGA}'}{8}{subsection.1.5.1}% 
-\contentsline {subsection}{\numberline {1.5.2}Xilinx \acs {ML} event Munich}{10}{subsection.1.5.2}% 
-\contentsline {section}{\numberline {1.6}Week 6}{10}{section.1.6}% 
-\contentsline {subsection}{\numberline {1.6.1}Xilinx \acs {ML} event report}{10}{subsection.1.6.1}% 
-\contentsline {subsection}{\numberline {1.6.2}Presentation 'Introduction to \ac {ML} on \acp {FPGA}'}{10}{subsection.1.6.2}% 
-\contentsline {subsection}{\numberline {1.6.3}Bugfix for ZCU 104 evaluation board}{10}{subsection.1.6.3}% 
-\contentsline {subsection}{\numberline {1.6.4}Synthara collaboration}{11}{subsection.1.6.4}% 
-\contentsline {section}{\numberline {1.7}Week 7}{12}{section.1.7}% 
-\contentsline {subsection}{\numberline {1.7.1}Presentation 'Introduction to \ac {ML} on \acp {FPGA}'}{12}{subsection.1.7.1}% 
-\contentsline {subsection}{\numberline {1.7.2}Vivado hardware design and embedded \acs {OS}}{12}{subsection.1.7.2}% 
-\contentsline {section}{\numberline {1.8}Week 8}{14}{section.1.8}% 
-\contentsline {subsection}{\numberline {1.8.1}Vivado hardware design and embedded \acs {OS}}{14}{subsection.1.8.1}% 
-\contentsline {subsection}{\numberline {1.8.2}Synthara collaboration conference call}{16}{subsection.1.8.2}% 
-\contentsline {section}{\numberline {1.9}Week 9}{16}{section.1.9}% 
-\contentsline {subsection}{\numberline {1.9.1}Intel evaluation}{16}{subsection.1.9.1}% 
-\contentsline {subsection}{\numberline {1.9.2}Petalinux workflow}{17}{subsection.1.9.2}% 
-\contentsline {section}{\numberline {1.10}Week 10}{17}{section.1.10}% 
-\contentsline {subsection}{\numberline {1.10.1}\acs {DNNDK} update}{17}{subsection.1.10.1}% 
-\contentsline {subsection}{\numberline {1.10.2}Petalinux workflow}{18}{subsection.1.10.2}% 
-\contentsline {subsection}{\numberline {1.10.3}Enclustra hardware integration}{18}{subsection.1.10.3}% 
-\contentsline {section}{\numberline {1.11}Week 11}{20}{section.1.11}% 
-\contentsline {subsection}{\numberline {1.11.1}Enclustra hardware integration}{20}{subsection.1.11.1}% 
-\contentsline {subsection}{\numberline {1.11.2}Petalinux build}{20}{subsection.1.11.2}% 
-\contentsline {subsection}{\numberline {1.11.3}Synthara visit and collaboration discussion}{20}{subsection.1.11.3}% 
-\contentsline {section}{\numberline {1.12}Week 12}{22}{section.1.12}% 
-\contentsline {subsection}{\numberline {1.12.1}Mars ST3 demonstrator}{22}{subsection.1.12.1}% 
-\contentsline {section}{\numberline {1.13}Week 13}{24}{section.1.13}% 
-\contentsline {subsection}{\numberline {1.13.1}Mars ST3 demonstrator preparation}{24}{subsection.1.13.1}% 
-\contentsline {subsection}{\numberline {1.13.2}ROCK-PAPER-SCISSOR demonstration data collection preparation}{25}{subsection.1.13.2}% 
-\contentsline {section}{\numberline {1.14}Week 14}{25}{section.1.14}% 
-\contentsline {subsection}{\numberline {1.14.1}ROCK-PAPER-SCISSOR demonstration data collection preparation}{25}{subsection.1.14.1}% 
-\contentsline {subsection}{\numberline {1.14.2}Shell scripting and presentation on data set collection}{27}{subsection.1.14.2}% 
-\contentsline {section}{\numberline {1.15}Week 15}{28}{section.1.15}% 
-\contentsline {subsection}{\numberline {1.15.1}Data set collection}{28}{subsection.1.15.1}% 
-\contentsline {subsection}{\numberline {1.15.2}Intel \acs {ML} seminar in Lausanne}{28}{subsection.1.15.2}% 
-\contentsline {section}{\numberline {1.16}Week 16}{29}{section.1.16}% 
-\contentsline {subsection}{\numberline {1.16.1}Data set collection}{29}{subsection.1.16.1}% 
-\contentsline {subsection}{\numberline {1.16.2}Robot hand ordering}{30}{subsection.1.16.2}% 
-\contentsline {subsection}{\numberline {1.16.3}Internship documentation}{31}{subsection.1.16.3}% 
-\contentsline {section}{\numberline {1.17}Week 17}{31}{section.1.17}% 
-\contentsline {subsection}{\numberline {1.17.1}Robot hand ordering}{31}{subsection.1.17.1}% 
-\contentsline {subsection}{\numberline {1.17.2}Synthara update}{31}{subsection.1.17.2}% 
-\contentsline {subsection}{\numberline {1.17.3}Internship documentation}{32}{subsection.1.17.3}% 
-\contentsline {section}{\numberline {1.18}Week 18}{32}{section.1.18}% 
-\contentsline {subsection}{\numberline {1.18.1}Internship documentation}{32}{subsection.1.18.1}% 
-\contentsline {subsection}{\numberline {1.18.2}Synthara update}{33}{subsection.1.18.2}% 
-\contentsline {section}{\numberline {1.19}Week 19}{33}{section.1.19}% 
-\contentsline {subsection}{\numberline {1.19.1}Website content about \acs {AI}}{33}{subsection.1.19.1}% 
-\contentsline {subsection}{\numberline {1.19.2}Embedded World demo discussion}{33}{subsection.1.19.2}% 
-\contentsline {subsection}{\numberline {1.19.3}\acs {DNNDK} Tensorflow workflow}{34}{subsection.1.19.3}% 
-\contentsline {chapter}{\nonumberline Bibliography}{35}{chapter*.45}% 
-\contentsline {chapter}{\numberline {A}Workday reports}{37}{appendix.A}% 
+\contentsline {chapter}{List of Figures}{I}{section*.7}
+\contentsline {chapter}{List of Tables}{III}{chapter*.8}
+\contentsline {chapter}{Abbreviations}{V}{chapter*.10}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Internship report}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Week 1}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Company profile}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Market research}{3}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Week 2}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Out-of-box testing}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Wiki updates and ZCU 104 testing}{6}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Week 3}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Presentation 'Introduction to \acs {AI}'}{6}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}\ac {DNNDK} testing on ZCU 104}{7}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Week 4}{8}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Presentation 'Introduction to \acs {AI}'}{8}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Xilinx Vivado and \acs {DNNDK} workflow}{8}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Week 5}{10}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Presentation 'Introduction to \ac {ML} on \acp {FPGA}'}{10}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Xilinx \acs {ML} event Munich}{12}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Week 6}{12}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Xilinx \acs {ML} event report}{12}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Presentation 'Introduction to \ac {ML} on \acp {FPGA}'}{12}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Bugfix for ZCU 104 evaluation board}{13}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}Synthara collaboration}{13}{subsection.2.6.4}
+\contentsline {section}{\numberline {2.7}Week 7}{13}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Presentation 'Introduction to \ac {ML} on \acp {FPGA}'}{13}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Vivado hardware design and embedded \acs {OS}}{14}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Week 8}{16}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Vivado hardware design and embedded \acs {OS}}{16}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Synthara collaboration conference call}{18}{subsection.2.8.2}
+\contentsline {section}{\numberline {2.9}Week 9}{18}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Intel evaluation}{18}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Petalinux workflow}{19}{subsection.2.9.2}
+\contentsline {section}{\numberline {2.10}Week 10}{20}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}\acs {DNNDK} update}{20}{subsection.2.10.1}
+\contentsline {subsection}{\numberline {2.10.2}Petalinux workflow}{20}{subsection.2.10.2}
+\contentsline {subsection}{\numberline {2.10.3}Enclustra hardware integration}{21}{subsection.2.10.3}
+\contentsline {section}{\numberline {2.11}Week 11}{22}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Enclustra hardware integration}{22}{subsection.2.11.1}
+\contentsline {subsection}{\numberline {2.11.2}Petalinux build}{22}{subsection.2.11.2}
+\contentsline {subsection}{\numberline {2.11.3}Synthara visit and collaboration discussion}{24}{subsection.2.11.3}
+\contentsline {section}{\numberline {2.12}Week 12}{24}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Mars ST3 demonstrator}{24}{subsection.2.12.1}
+\contentsline {section}{\numberline {2.13}Week 13}{27}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Mars ST3 demonstrator preparation}{27}{subsection.2.13.1}
+\contentsline {subsection}{\numberline {2.13.2}ROCK-PAPER-SCISSOR demonstration data collection preparation}{27}{subsection.2.13.2}
+\contentsline {section}{\numberline {2.14}Week 14}{28}{section.2.14}
+\contentsline {subsection}{\numberline {2.14.1}ROCK-PAPER-SCISSOR demonstration data collection preparation}{28}{subsection.2.14.1}
+\contentsline {subsection}{\numberline {2.14.2}Shell scripting and presentation on data set collection}{29}{subsection.2.14.2}
+\contentsline {section}{\numberline {2.15}Week 15}{29}{section.2.15}
+\contentsline {subsection}{\numberline {2.15.1}Data set collection}{29}{subsection.2.15.1}
+\contentsline {subsection}{\numberline {2.15.2}Intel \acs {ML} seminar in Lausanne}{30}{subsection.2.15.2}
+\contentsline {section}{\numberline {2.16}Week 16}{31}{section.2.16}
+\contentsline {subsection}{\numberline {2.16.1}Data set collection}{31}{subsection.2.16.1}
+\contentsline {subsection}{\numberline {2.16.2}Robot hand ordering}{32}{subsection.2.16.2}
+\contentsline {subsection}{\numberline {2.16.3}Internship documentation}{32}{subsection.2.16.3}
+\contentsline {section}{\numberline {2.17}Week 17}{33}{section.2.17}
+\contentsline {subsection}{\numberline {2.17.1}Robot hand ordering}{33}{subsection.2.17.1}
+\contentsline {subsection}{\numberline {2.17.2}Synthara update}{33}{subsection.2.17.2}
+\contentsline {subsection}{\numberline {2.17.3}Internship documentation}{33}{subsection.2.17.3}
+\contentsline {section}{\numberline {2.18}Week 18}{34}{section.2.18}
+\contentsline {subsection}{\numberline {2.18.1}Internship documentation}{34}{subsection.2.18.1}
+\contentsline {subsection}{\numberline {2.18.2}Synthara update}{34}{subsection.2.18.2}
+\contentsline {section}{\numberline {2.19}Week 19}{35}{section.2.19}
+\contentsline {subsection}{\numberline {2.19.1}Website content about \acs {AI}}{35}{subsection.2.19.1}
+\contentsline {subsection}{\numberline {2.19.2}Embedded World demo discussion}{35}{subsection.2.19.2}
+\contentsline {subsection}{\numberline {2.19.3}\acs {DNNDK} Tensorflow workflow}{36}{subsection.2.19.3}
+\contentsline {section}{\numberline {2.20}Week 20}{36}{section.2.20}
+\contentsline {subsection}{\numberline {2.20.1}\acs {DNNDK} Tensorflow workflow}{36}{subsection.2.20.1}
+\contentsline {subsection}{\numberline {2.20.2}Data set publication}{37}{subsection.2.20.2}
+\contentsline {subsection}{\numberline {2.20.3}Robot hand assembly}{38}{subsection.2.20.3}
+\contentsline {subsection}{\numberline {2.20.4}Mettler Toledo \ac {AI} demo interest}{38}{subsection.2.20.4}
+\contentsline {section}{\numberline {2.21}Week 21}{38}{section.2.21}
+\contentsline {subsection}{\numberline {2.21.1}Robot hand testing and documentation}{38}{subsection.2.21.1}
+\contentsline {subsection}{\numberline {2.21.2}Mettler Toledo \ac {AI} visit}{38}{subsection.2.21.2}
+\contentsline {subsection}{\numberline {2.21.3}\acs {FPGA} \acs {PWM} VHDL module}{39}{subsection.2.21.3}
+\contentsline {section}{\numberline {2.22}Week 22}{39}{section.2.22}
+\contentsline {subsection}{\numberline {2.22.1}\acs {FPGA} \acs {PWM} VHDL module}{39}{subsection.2.22.1}
+\contentsline {subsection}{\numberline {2.22.2}Synthara design porting}{40}{subsection.2.22.2}
+\contentsline {subsection}{\numberline {2.22.3}Xilinx proprietary software trial}{40}{subsection.2.22.3}
+\contentsline {section}{\numberline {2.23}Week 23}{40}{section.2.23}
+\contentsline {subsection}{\numberline {2.23.1}Synthara design porting}{40}{subsection.2.23.1}
+\contentsline {subsection}{\numberline {2.23.2}Mars XU3 alternative}{40}{subsection.2.23.2}
+\contentsline {section}{\numberline {2.24}Week 24}{41}{section.2.24}
+\contentsline {subsection}{\numberline {2.24.1}\acs {MIPI} demonstrator Petalinux Mars ST3}{41}{subsection.2.24.1}
+\contentsline {subsection}{\numberline {2.24.2}I2C debugging}{42}{subsection.2.24.2}
+\contentsline {section}{\numberline {2.25}Week 25}{42}{section.2.25}
+\contentsline {subsection}{\numberline {2.25.1}New \ac {DPU} version}{42}{subsection.2.25.1}
+\contentsline {subsection}{\numberline {2.25.2}ECC 2019 presentation}{42}{subsection.2.25.2}
+\contentsline {section}{\numberline {2.26}Week 26}{43}{section.2.26}
+\contentsline {subsection}{\numberline {2.26.1}ECC 2019 presentation}{43}{subsection.2.26.1}
+\contentsline {subsection}{\numberline {2.26.2}Petalinux debug}{44}{subsection.2.26.2}
+\contentsline {section}{\numberline {2.27}Week 27}{44}{section.2.27}
+\contentsline {subsection}{\numberline {2.27.1}ECC 2019 presentation}{44}{subsection.2.27.1}
+\contentsline {subsection}{\numberline {2.27.2}Mars ST3 demonstrator polishing}{45}{subsection.2.27.2}
+\contentsline {subsection}{\numberline {2.27.3}Synthara design porting}{45}{subsection.2.27.3}
+\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.47}
+\contentsline {chapter}{\numberline {A}Workday reports}{49}{appendix.A}

@@ -1,0 +1,10 @@
+\chapter{Introduction}
+In this internship my work can be divided into three main blocks, \ac{DNNDK} testing, \ac{DNNDK} demonstrator on Enclustra hardware and finally a collaboration project.
+
+After investigating the possibilities of available \ac{ANN} accelerators and market research, the Xilinx \ac{DNNDK} was studied in more detail. The available examples were evaluated using the Xilinx ZCU 104 evaluation board. This was used as a test platform to check the published sample applications in the field of image recognition. The main application area is image classification and detection.
+
+The next step was porting the available examples and use cases to Enclustra custom hardware. In addition, a demonstrator for \ac{ANN} applications was developed using the Enclustra Mars ST3 baseboard and Mars XU 3 \ac{FPGA} module. Image classification using resnet50 and face detection were implemented and tested. The whole design included using Vivado for the \ac{DPU} \ac{IP} core integration and then building an embedded Linux \ac{OS} with Xilinx Petalinux.
+
+The other main part of the internship was developing a more sophisticated \ac{ANN} demonstrator in collaboration with Synthara. Synthara is an ETH spin-off and offers their own \ac{IP} core for neural network applications. The idea for the demonstrator was for a human player to play Rock-Paper-Scissors against a robot hand. The decision which symbol to choose would be done by using a camera and running a hand gesture detection neural network on the \ac{FPGA}. For this purpose, a data set was collected and a custom neural network trained. The hardware implementation was also started by using the Synthara neural network accelerator \ac{IP} core.
+
+Throughout the internship several presentations were held as well. The topics ranged from introduction to \ac{AI} and \ac{ML} in general, to \ac{AI} on \acp{FPGA} and data set collection.

@@ -49,4 +49,21 @@
   url    = {https://www.xilinx.com/support/documentation/user_guides/ug1354-xilinx-ai-sdk.pdf},
 }
 
+@Online{frameworks,
+  author = {Devopedia},
+  editor = {Devopedia},
+  title  = {Deep Learning Frameworks},
+  year   = {2019},
+  date   = {2019-01-22},
+  url    = {https://devopedia.org/deep-learning-frameworks},
+}
+
+@Online{mpsoc,
+  author = {Xilinx},
+  editor = {Xilinx},
+  title  = {MPSoC product guide},
+  year   = {2016},
+  url    = {https://www.xilinx.com/support/documentation/selection-guides/zynq-ultrascale-plus-product-selection-guide.pdf},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
